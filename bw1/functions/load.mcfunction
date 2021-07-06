@@ -1,0 +1,1 @@
+function bw1:umrtie/vyhra/1
