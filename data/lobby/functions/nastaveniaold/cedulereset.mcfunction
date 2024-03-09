@@ -1,0 +1,16 @@
+#Cedule refresh
+data merge block -15 2 0 {front_text:{messages:['{"text":"Refresh ♻","color":"#00FF00","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/cedulereset"}}','','','']}}
+
+#Jazyk
+execute if score @s jazyk matches 0 run data merge block -15 4 3 {front_text:{messages:['{"text":"Language","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/jazyk"}}','""','[{"text":">","color":"#00FF00"}," ",{"text":"English","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":"<","color":"#00FF00"}]','{"text":"Slovenčina","color":"#808080"}']}}
+execute if score @s jazyk matches 1 run data merge block -15 4 3 {front_text:{messages:['{"text":"Jazyk","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/jazyk"}}','{"text":"English","color":"#808080"}','[{"text":">","color":"#00FF00"}," ",{"text":"Slovenčina","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":"<","color":"#00FF00"}]','""']}}
+
+#Rýchlosť textov
+#PRIDAŤ JAZYKY PRE TIETO CEDULE!!!!
+execute if score @s textspeed matches 0 run data merge block -15 4 2 {front_text:{messages:['{"text":"Rýchlosť textov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/rychtext"}}','[{"text":"|","color":"dark_green"}," ",{"text":"5 30 5","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":">>","color":"#00FF00"}]','""','{"text":"Pred.: 5 30 5","color":"#FF8000"}']}}
+execute if score @s textspeed matches 1 run data merge block -15 4 2 {front_text:{messages:['{"text":"Rýchlosť textov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/rychtext"}}','[{"text":"|","color":"dark_green"}," ",{"text":"10 40 10","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":">>","color":"#00FF00"}]','""','{"text":"Pred.: 5 30 5","color":"#FF8000"}']}}
+execute if score @s textspeed matches 2 run data merge block -15 4 2 {front_text:{messages:['{"text":"Rýchlosť textov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/rychtext"}}','[{"text":"|","color":"dark_green"}," ",{"text":"10 70 20","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":">>","color":"#00FF00"}]','""','{"text":"Pred.: 5 30 5","color":"#FF8000"}']}}
+execute if score @s textspeed matches 3 run data merge block -15 4 2 {front_text:{messages:['{"text":"Rýchlosť textov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/rychtext"}}','[{"text":"|","color":"dark_green"}," ",{"text":"0 10 0","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":">>","color":"#00FF00"}]','""','{"text":"Pred.: 5 30 5","color":"#FF8000"}']}}
+execute if score @s textspeed matches 4 run data merge block -15 4 2 {front_text:{messages:['{"text":"Rýchlosť textov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function lobby:nastavenia/rychtext"}}','[{"text":"|","color":"dark_green"}," ",{"text":"5 5 5","color":"#00FFFF","bold":true,"underlined":true}," ",{"text":">>","color":"#00FF00"}]','""','{"text":"Pred.: 5 30 5","color":"#FF8000"}']}}
+
+execute as @s run playsound block.stone_button.click_on voice @a

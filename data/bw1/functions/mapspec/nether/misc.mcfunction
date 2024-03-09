@@ -1,0 +1,1 @@
+execute as @e[distance=0..] run function bw1:mapspec/nether/netherportal

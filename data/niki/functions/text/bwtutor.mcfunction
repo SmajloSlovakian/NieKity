@@ -1,0 +1,4 @@
+advancement grant @s[scores={jazyk=0}] only bw1:tutorialen
+advancement grant @s[scores={jazyk=1}] only bw1:tutorialsk
+tellraw @s[scores={jazyk=0}] [{"text":"Bedwars tutorial:","color": "#00FFFF"},{"text":"\n-Bed is in chest!!","color":"#00FF00"},{"text":"\n-Place it where it belongs","color":"#80FF80"},{"text":"\n-Villager levels up when they trade and gets more trades","color":"#00FF00"},{"text":"\n-Villager has limited amount of stock if not besides a composter","color":"#80FF80"}]
+tellraw @s[scores={jazyk=1}] [{"text":"Bedwars návod:","color": "#00FFFF"},{"text":"\n-Posteľ v truhlici!","color":"#00FF00"},{"text":"\n-Polož na určené miesto","color":"#80FF80"},{"text":"\n-Osadník sa leveluje keď obchoduje a dostáva nové obchody","color":"#00FF00"},{"text":"\n-Osadník má limitované množstvo zásob keď pri sebe nemá kompostér","color":"#80FF80"}]

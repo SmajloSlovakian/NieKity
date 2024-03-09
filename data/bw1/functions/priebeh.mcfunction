@@ -1,63 +1,55 @@
-#vysávač
-kill @e[type=item,nbt=!{Item:{id:"minecraft:iron_ingot"}},nbt=!{Item:{id:"minecraft:gold_ingot"}},nbt=!{Item:{id:"minecraft:brick"}},distance=..100,x=-200,y=50,z=-200]
+scoreboard players operation časp bw1 = čas bw1
+scoreboard players operation čas bw1 += tickstoadd nikimath
+execute if score čas bw1 matches ..0 run return run function bw1:odpocet2/run
+
+#upraviť
+execute if score structreset bw1nastavenia matches 1 run kill @e[predicate=bw1:vysavac,distance=0..]
+
+#osadníci
+execute as @e[type=villager,distance=0..] run function bw1:priebeh/osadnici
+execute as @e[type=villager,y=-1,dy=-100,x=-100,dx=200,z=-100,dz=200] run function bw1:mapspec/_run/tp
 
 #zomrelček
-execute at @a[team=bw1.1,scores={umrel=1},x=-200,y=72,z=-200,distance=..2,tag=!bw1.p] run function bw1:umrtie/zomrelm
-execute at @a[team=bw1.2,scores={umrel=1},x=-200,y=72,z=-200,distance=..2,tag=!bw1.p] run function bw1:umrtie/zomrelc
-execute at @a[team=bw1.3,scores={umrel=1},x=-200,y=72,z=-200,distance=..2,tag=!bw1.p] run function bw1:umrtie/zomrelzl
-execute at @a[team=bw1.4,scores={umrel=1},x=-200,y=72,z=-200,distance=..2,tag=!bw1.p] run function bw1:umrtie/zomrelze
+execute as @a[distance=0..,scores={umrel=1..},tag=!bw1.p] at @s run function bw1:umrtie/zomrel
 
 #posteľček
-execute if block -240 40 -200 #minecraft:beds run setblock -251 12 -254 redstone_block replace
-execute if block -200 40 -160 #minecraft:beds run setblock -251 11 -254 redstone_block replace
-execute if block -160 40 -200 #minecraft:beds run setblock -251 10 -254 redstone_block replace
-execute if block -200 40 -240 #minecraft:beds run setblock -251 9 -254 redstone_block replace
-
-execute if block -240 40 -200 #minecraft:beds run setblock -247 12 -254 air replace
-execute if block -200 40 -160 #minecraft:beds run setblock -247 11 -254 air replace
-execute if block -160 40 -200 #minecraft:beds run setblock -247 10 -254 air replace
-execute if block -200 40 -240 #minecraft:beds run setblock -247 9 -254 air replace
+tag @a[predicate=niki:hasbed] add bw1hasbed
+execute if entity @a[predicate=!niki:hasbed,tag=bw1hasbed] run scoreboard players set posteľček bw1 4
+execute if entity @e[predicate=niki:isbed,tag=!bw1isbed] run scoreboard players set posteľček bw1 4
+tag @a[predicate=!niki:hasbed] remove bw1hasbed
+tag @e[predicate=niki:isbed,tag=!bw1isbed] add bw1isbed
 
 
-execute unless block -240 40 -200 #minecraft:beds run setblock -247 12 -254 redstone_block replace
-execute unless block -200 40 -160 #minecraft:beds run setblock -247 11 -254 redstone_block replace
-execute unless block -160 40 -200 #minecraft:beds run setblock -247 10 -254 redstone_block replace
-execute unless block -200 40 -240 #minecraft:beds run setblock -247 9 -254 redstone_block replace
-
-execute unless block -240 40 -200 #minecraft:beds run setblock -251 12 -254 air replace
-execute unless block -200 40 -160 #minecraft:beds run setblock -251 11 -254 air replace
-execute unless block -160 40 -200 #minecraft:beds run setblock -251 10 -254 air replace
-execute unless block -200 40 -240 #minecraft:beds run setblock -251 9 -254 air replace
+execute if score posteľček bw1 matches 1.. run function bw1:mapspec/_run/postelcek
+execute if score posteľček bw1 matches 1.. run scoreboard players remove posteľček bw1 1
 
 
 #znovuzrodeniabod
-spawnpoint @a[team=bw1.1] -200 72 -200
-spawnpoint @a[team=bw1.2] -200 72 -200
-spawnpoint @a[team=bw1.3] -200 72 -200
-spawnpoint @a[team=bw1.4] -200 72 -200
+execute as @a[distance=0..] run function bw1:mapspec/_run/spawnpoint
 
 #materiál
 scoreboard players add ťehly bw1casovac 1
 scoreboard players add železo bw1casovac 1
 scoreboard players add žlato bw1casovac 1
-execute if score ťehly bw1casovac >= ťehly bw1maxmat run function bw1:material/tehly
-execute if score železo bw1casovac >= železo bw1maxmat run function bw1:material/zelezo
-execute if score žlato bw1casovac >= žlato bw1maxmat run function bw1:material/zlato
+execute if score ťehly bw1casovac >= ťehly bw1maxmat run function bw1:mapspec/_run/tehly
+execute if score železo bw1casovac >= železo bw1maxmat run function bw1:mapspec/_run/zelezo
+execute if score žlato bw1casovac >= žlato bw1maxmat run function bw1:mapspec/_run/zlato
 
 #štruktúrny reset
 scoreboard players add štruktúry bw1casovac 1
+execute if score structreset bw1nastavenia matches 0 run scoreboard players set štruktúry bw1casovac 0
 
-execute if score štruktúry bw1casovac = koniec 1 run setblock -252 18 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 2 run setblock -251 18 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 3 run setblock -250 18 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 4 run setblock -249 18 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 5 run setblock -248 18 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 6 run setblock -220 22 -255 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 7 run setblock -153 11 -145 redstone_block replace
-execute if score štruktúry bw1casovac = koniec 8 run setblock -162 11 -145 redstone_block replace
-execute if score štruktúry bw1casovac = koniec bw1maxstruc run function bw1:struktury
+function bw1:mapspec/_run/struct
 
-execute if score štruktúry bw1casovac >= koniec bw1maxstruc run scoreboard players set štruktúry bw1casovac 0
+#barrier
+execute in niki:1 run function niki:border
 
-#čekvýhra
-execute if score koniec bw1hraci <= koniec 1 run setblock -248 15 -254 redstone_block replace
+#misc
+function bw1:mapspec/_run/misc
+
+#pozorovač
+execute as @a[distance=0..,team=!bw1.1,team=!bw1.2,team=!bw1.3,team=!bw1.4,tag=!bw1.p] run gamemode spectator
+execute as @a[distance=0..,team=!bw1.1,team=!bw1.2,team=!bw1.3,team=!bw1.4,tag=!bw1.p] run tag @s add bw1.p
+
+execute if score výhra bw1 matches 0.. run scoreboard players remove výhra bw1 1
+execute if score výhra bw1 matches 0 run function bw1:umrtie/vyhra/2

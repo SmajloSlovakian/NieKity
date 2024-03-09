@@ -10,9 +10,9 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "sw1:sw1sipy"
+          "name": "sw1:groups/luksip"
         },
-		{
+		    {
           "type": "minecraft:item",
           "name": "minecraft:snowball",
           "functions": [
@@ -20,9 +20,31 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 15
+                "max": 16
               }
-            }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Švehloguľa\"}'}}"
+          }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:egg",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 16
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "EggsRay"
+          }
           ]
         },
         {
@@ -41,19 +63,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:oak_boat"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
         },
         {
           "type": "minecraft:item",
@@ -89,7 +98,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 5,
-                "max": 10
+                "max": 20
               }
             }
           ]
@@ -122,26 +131,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:dried_kelp",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 15
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:leather_helmet",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 20,
-                "max": 40
+                "max": 60
               },
               "conditions": [
                 {
@@ -160,7 +156,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 20,
-                "max": 40
+                "max": 60
               },
               "conditions": [
                 {
@@ -179,7 +175,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 20,
-                "max": 40
+                "max": 60
               },
               "conditions": [
                 {
@@ -198,7 +194,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 20,
-                "max": 40
+                "max": 60
               },
               "conditions": [
                 {
@@ -217,7 +213,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -236,7 +232,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -255,7 +251,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -274,7 +270,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -293,26 +289,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -331,7 +308,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -350,7 +327,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -369,7 +346,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -388,7 +365,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -407,26 +384,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:wooden_axe",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -448,8 +406,8 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": {
-                "min": 10,
-                "max": 20
+                "min": 20,
+                "max": 60
               },
               "conditions": [
                 {
@@ -468,7 +426,7 @@
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 10,
-                "max": 20
+                "max": 40
               },
               "conditions": [
                 {
@@ -482,10 +440,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lava_bucket"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:axolotl_bucket"
         },
         {
           "type": "minecraft:item",
@@ -505,32 +459,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:wooden_sword",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 20
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:scaffolding",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 7
+                "max": 16
               }
             }
           ]
@@ -661,19 +596,6 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
                 "max": 10
               }
             }

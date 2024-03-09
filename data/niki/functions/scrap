@@ -1,0 +1,15 @@
+
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 2 run fill ~ ~ ~ ~ ~ ~ light[level=14] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 4 run fill ~ ~ ~ ~ ~ ~ light[level=13] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 6 run fill ~ ~ ~ ~ ~ ~ light[level=12] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 8 run fill ~ ~ ~ ~ ~ ~ light[level=11] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 10 run fill ~ ~ ~ ~ ~ ~ light[level=10] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 12 run fill ~ ~ ~ ~ ~ ~ light[level=9] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 14 run fill ~ ~ ~ ~ ~ ~ light[level=8] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 16 run fill ~ ~ ~ ~ ~ ~ light[level=7] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 18 run fill ~ ~ ~ ~ ~ ~ light[level=6] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 20 run fill ~ ~ ~ ~ ~ ~ light[level=5] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 22 run fill ~ ~ ~ ~ ~ ~ light[level=4] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 24 run fill ~ ~ ~ ~ ~ ~ light[level=3] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 26 run fill ~ ~ ~ ~ ~ ~ light[level=2] replace light
+execute as @e[type=marker,tag=eggsraymark] at @s if score @s mechNcasovac matches 28 run fill ~ ~ ~ ~ ~ ~ light[level=1] replace light

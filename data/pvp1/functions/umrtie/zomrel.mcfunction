@@ -1,13 +1,15 @@
-scoreboard players set @s umrel 0
 tag @s add pvp1.p
 gamemode spectator @s
 clear @s
 
-execute unless entity @a[team=pvp1.1,tag=!pvp1.p] run schedule function pvp1:umrtie/vyhra 3s
-execute unless entity @a[team=pvp1.2,tag=!pvp1.p] run schedule function pvp1:umrtie/vyhra 3s
-execute unless entity @a[team=pvp1.2,tag=!pvp1.p] run title @a[team=pvp1.1] title {"text":"Vyhral \u010dervený tým","color":"#FF0000"}
-execute unless entity @a[team=pvp1.2,tag=!pvp1.p] run title @a[team=pvp1.2] title {"text":"Vyhral \u010dervený tým","color":"#FF0000"}
-execute unless entity @a[team=pvp1.1,tag=!pvp1.p] run title @a[team=pvp1.1] title {"text":"Vyhral modrý tým","color":"#0000FF"}
-execute unless entity @a[team=pvp1.1,tag=!pvp1.p] run title @a[team=pvp1.2] title {"text":"Vyhral modrý tým","color":"#0000FF"}
+execute at @p[scores={zabil=1..}] as @a[team=pvp1.1] run function niki:text/zivoty
+execute at @p[scores={zabil=1..}] as @a[team=pvp1.2] run function niki:text/zivoty
+scoreboard players set @p[scores={zabil=1..}] zabil 0
+tag @e[tag=pvp1musicman,distance=0..] add nm_stopmusic
+function niki:cleartag
+tag @a[distance=0..] add 1
+execute unless entity @a[team=pvp1.2,tag=!pvp1.p] as @r[team=pvp1.1,tag=!pvp1.p] store result score výhra pvp1 run function niki:text/vyhra/c
+execute unless entity @a[team=pvp1.1,tag=!pvp1.p] as @r[team=pvp1.2,tag=!pvp1.p] store result score výhra pvp1 run function niki:text/vyhra/m
+execute if score výhra pvp1 matches 1.. run tag @e[tag=sw1musicman,distance=0..] add nm_stopmusic
 
-execute as @s run schedule function pvp1:umrtie/tp 2t
+execute as @s run function pvp1:umrtie/tp

@@ -1,15 +1,6 @@
-title @a[team=tb1.1] title {"text":"Nech hra začne XD"}
-title @a[team=tb1.2] title {"text":"Nech hra začne XD"}
-playsound entity.firework_rocket.blast_far master @a 20 30 181
-playsound entity.firework_rocket.blast_far master @a 20 30 267
-setblock 19 31 181 air
-setblock 20 31 180 air
-setblock 21 31 181 air
-setblock 20 32 181 air
-setblock 20 31 182 air
-
-setblock 20 32 267 air
-setblock 19 31 267 air
-setblock 20 31 268 air
-setblock 21 31 267 air
-setblock 20 31 266 air
+execute as @a[distance=0..] run function niki:text/odpocet2/0
+fill 1 34 -42 -1 33 -44 air replace barrier
+fill -1 34 42 1 33 44 air replace barrier
+fill -42 34 1 -44 33 -1 air replace barrier
+fill 42 34 -1 44 33 1 air replace barrier
+#spomienka na "Nech hra začne XD"

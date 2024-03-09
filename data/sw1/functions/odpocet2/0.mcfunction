@@ -1,8 +1,7 @@
-title @a[team=sw1.1] title {"text":"Štart"}
-title @a[team=sw1.2] title {"text":"Štart"}
-fill 0 38 -234 2 37 -236 air replace minecraft:barrier
-fill 0 38 -166 -2 37 -164 air replace minecraft:barrier
-execute at @a[team=sw1.1] run playsound minecraft:entity.firework_rocket.large_blast_far master @a
-execute at @a[team=sw1.2] run playsound minecraft:entity.firework_rocket.large_blast_far master @a
+execute at @a[team=sw1.1] run function niki:barrierbr
+execute at @a[team=sw1.2] run function niki:barrierbr
+execute as @a[team=sw1.1] at @s run function niki:text/odpocet2/0
+execute as @a[team=sw1.2] at @s run function niki:text/odpocet2/0
 gamemode survival @a[team=sw1.1]
 gamemode survival @a[team=sw1.2]
+execute as @e[nbt={NoAI:true}] run data modify entity @s NoAI set value false

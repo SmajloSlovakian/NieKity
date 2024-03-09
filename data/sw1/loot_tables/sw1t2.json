@@ -3,26 +3,30 @@
     {
       "rolls": {
         "min": 2,
-        "max": 4
+        "max": 3
       },
       "bonus_rolls": 2,
       "entries": [
-	    {
+	      {
           "type": "minecraft:item",
           "name": "minecraft:firework_rocket",
           "functions": [
-			{
-				"function": "minecraft:set_count",
-				"count": {
+            {
+              "function": "minecraft:set_count",
+              "count": {
                   "min": 5,
                   "max": 10
               }
-			},
+            },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Fireworks:{Flight:3,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:2,Flicker:0,Trail:1,Colors:[I;2651799,11250603,4408131,14188952,4312372,14602026,15435844,15790320],FadeColors:[I;1973019,11743532,3887386,5320730,2437522,8073150,6719955,12801229]}]}}"
+              "tag": "{Fireworks:{Flight:3,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:2,Flicker:0,Trail:1,Colors:[I;2651799,11250603,4408131,14188952,4312372,14602026,15435844,15790320],FadeColors:[I;1973019,11743532,3887386,5320730,2437522,8073150,6719955,12801229]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]}]}}"
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "sw1:groups/luksip"
         },
         {
           "type": "minecraft:item",
@@ -52,19 +56,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:dried_kelp",
           "functions": [
             {
@@ -73,6 +64,16 @@
                 "min": 10,
                 "max": 30
               }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goat_horn",
+          "functions": [
+            {
+              "function": "minecraft:set_instrument",
+              "options": "#minecraft:goat_horns"
             }
           ]
         },
@@ -104,16 +105,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:elytra",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 10,
-                "max": 100
-              }
-            }
-          ]
+          "name": "minecraft:elytra"
         },
         {
           "type": "minecraft:item",
@@ -317,21 +309,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:crossbow",
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:trident",
           "functions": [
             {
@@ -351,7 +328,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.5
+                  "chance": 0.9
                 }
               ]
             }

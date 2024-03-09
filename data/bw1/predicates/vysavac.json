@@ -1,0 +1,43 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "location": {}
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Item:{id:\"minecraft:gold_ingot\"}}"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Item:{id:\"minecraft:iron_ingot\"}}"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Item:{id:\"minecraft:brick\"}}"
+            }
+          },
+          {
+            "condition": "reference",
+            "name": "niki:isbed"
+          }
+        ]
+      }
+    }
+  ]

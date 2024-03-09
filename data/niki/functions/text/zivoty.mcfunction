@@ -1,0 +1,2 @@
+tellraw @s[scores={jazyk=0}] ["[",{"text": "❤","color": "red"},"] ",{"selector":"@p"},{"text":" had ","color":"#00FF00"},{"score":{"name":"@p","objective":"zivota"},"color":"#00FF00"},{"text":" health","color":"#00FF00"}]
+tellraw @s[scores={jazyk=1}] ["[",{"text": "❤","color": "red"},"] ",{"text": "Hráč ","color": "#00FF00"},{"selector":"@p"},{"text":" mal ","color":"#00FF00"},{"score":{"name":"@p","objective":"zivota"},"color":"#00FF00"},{"text":" \u017eivota","color":"#00FF00"}]

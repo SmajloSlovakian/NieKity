@@ -4,6 +4,7 @@
     "type": "minecraft:flat",
     "seed": 1599037812,
     "settings": {
+      "structure_overrides": [],
       "biome": "minecraft:plains",
       "lakes": false,
       "features": false,

@@ -1,0 +1,2 @@
+tellraw @s[scores={jazyk=0}] ["[",{"text": "🔥","color": "#FF8000"},"] ",{"selector":"@p"},{"text":" is left with ","color":"#00FF00"},{"score":{"name":"@p","objective":"sw1zivoty"},"color":"#00FF00"},{"text":" respawns.","color":"#00FF00"}]
+tellraw @s[scores={jazyk=1}] ["[",{"text": "🔥","color": "#FF8000"},"] ",{"text": "Hráčovi ","color": "#00FF00"},{"selector":"@p"},{"text":" zostáva ","color":"#00FF00"},{"score":{"name":"@p","objective":"sw1zivoty"},"color":"#00FF00"},{"text":" oživení.","color":"#00FF00"}]

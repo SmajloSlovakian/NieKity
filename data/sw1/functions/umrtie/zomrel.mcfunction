@@ -1,11 +1,10 @@
-tag @s add sw1.p
-gamemode spectator @a[tag=sw1.p]
-execute if entity @s[team=sw1.1] run tp @s @r[team=sw1.2,tag=!sw1.p]
-execute if entity @s[team=sw1.2] run tp @s @r[team=sw1.1,tag=!sw1.p]
+execute if score @s sw1zivoty matches 0 run function sw1:umrtie/zomrela
+execute if score @s sw1zivoty matches 1.. run function sw1:umrtie/zomreln
+#scoreboard players set @s umrel 0
+function sw1:mapspec/_run/clearspawn
 
-execute unless entity @a[team=sw1.1,tag=!sw1.p] run schedule function sw1:umrtie/vyhra 3s
-execute unless entity @a[team=sw1.2,tag=!sw1.p] run schedule function sw1:umrtie/vyhra 3s
-execute unless entity @a[team=sw1.2,tag=!sw1.p] run title @a[team=sw1.1] title {"text":"Vyhral \u010dervený tým","color":"#FF0000"}
-execute unless entity @a[team=sw1.2,tag=!sw1.p] run title @a[team=sw1.2] title {"text":"Vyhral \u010dervený tým","color":"#FF0000"}
-execute unless entity @a[team=sw1.1,tag=!sw1.p] run title @a[team=sw1.1] title {"text":"Vyhral modrý tým","color":"#0000FF"}
-execute unless entity @a[team=sw1.1,tag=!sw1.p] run title @a[team=sw1.2] title {"text":"Vyhral modrý tým","color":"#0000FF"}
+execute at @p[scores={zabil=1..}] as @a[team=sw1.1] run function niki:text/zivoty
+execute at @p[scores={zabil=1..}] as @a[team=sw1.2] run function niki:text/zivoty
+scoreboard players set @p[scores={zabil=1..}] zabil 0
+
+function sw1:fallingchest
