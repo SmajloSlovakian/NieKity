@@ -9,7 +9,7 @@ execute if score Zelený TheBridge1 > a nikimath run scoreboard players operatio
 scoreboard players operation a nikimath *= 100 nikimath
 scoreboard players operation a nikimath /= 4 nikimath
 
-execute if score elimination tb1koniec matches 1 run return run scoreboard players operation @e[tag=tb1musicman,limit=1] nm_intensity = a nikimath
+execute if score elimination tb1koniec matches 0 run return run scoreboard players operation @e[tag=tb1musicman,limit=1] nm_intensity = a nikimath
 
 
 #nikimusic intensity pre elimináciu

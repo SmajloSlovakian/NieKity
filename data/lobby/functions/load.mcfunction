@@ -18,4 +18,3 @@ tellraw @a {"text":"Ahoj Niekity!","color":"yellow"}
 execute if score nonload nikimath matches 1 run tellraw @a {"text":"Bez loadu","color":"red"}
 scoreboard players set nonload nikimath 0
 scoreboard players set gaméskipcheck gametime 1
-# dobry vecir fdgklbhdzcbgj,vzkjbvgc jmfdv
