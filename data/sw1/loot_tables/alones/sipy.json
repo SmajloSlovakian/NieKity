@@ -26,23 +26,6 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:harming\"}"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-		{
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{Potion:\"minecraft:leaping\"}"
             },
             {
@@ -70,41 +53,7 @@
               }
             }
           ]
-        },
-		{
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:poison\"}"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-		{
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:slowness\"}"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
+        },  
 		{
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
