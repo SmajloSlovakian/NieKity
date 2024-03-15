@@ -7,15 +7,15 @@
       },
       "bonus_rolls": 2,
       "entries": [
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:firework_rocket",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                  "min": 5,
-                  "max": 10
+                "min": 5,
+                "max": 10
               }
             },
             {

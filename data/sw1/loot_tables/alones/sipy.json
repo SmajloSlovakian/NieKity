@@ -20,7 +20,7 @@
             }
           ]
         },
-		{
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "functions": [
@@ -37,7 +37,7 @@
             }
           ]
         },
-		{
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "functions": [
@@ -53,8 +53,8 @@
               }
             }
           ]
-        },  
-		{
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "functions": [
@@ -71,7 +71,7 @@
             }
           ]
         },
-		{
+        {
           "type": "minecraft:item",
           "name": "minecraft:spectral_arrow",
           "functions": [
@@ -84,7 +84,7 @@
             }
           ]
         },
-    {
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "functions": [
