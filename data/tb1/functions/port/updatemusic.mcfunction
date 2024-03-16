@@ -43,4 +43,6 @@ scoreboard players operation a nikimath *= 100 nikimath
 scoreboard players remove c nikimath 1
 scoreboard players operation a nikimath /= c nikimath
 
+tellraw s_smile_k ["niki intenzita: ","a: ",{"score":{"name": "a","objective": "nikimath"}},"b: ",{"score":{"name": "a","objective": "nikimath"}},"c: ",{"score":{"name": "a","objective": "nikimath"}}]
+
 scoreboard players operation @e[tag=tb1musicman,limit=1] nm_intensity = a nikimath

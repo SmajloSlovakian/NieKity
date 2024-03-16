@@ -2,7 +2,7 @@ execute if score @s nikimusic matches ..22698 if score @s nikimusicp matches 226
 execute if score @s nikimusic matches ..22640 if score @s nikimusicp matches 22641.. as @a[distance=0..] at @s run playsound niki:music.grid_runner.loop record @s ~ ~ ~ 0.6
 execute if score @s nikimusic matches ..20000 if score @s nikimusicp matches 20001.. run scoreboard players set @s nikimusic 22641
 execute if score @s nm_intensity matches 100.. if score @s nikimusic matches 20000.. run stopsound @a[distance=0..] record niki:music.grid_runner.loop
-execute if score @s nm_intensity matches 100.. if score @s nikimusic matches 20000.. run scoreboard players set @s nikimusic 11380
+execute if score @s nm_intensity matches 100.. if score @s nikimusic matches 20000.. run scoreboard players set @s nikimusic 11350
 
 
 #execute if score @s nikimusic matches ..11379 if score @s nikimusicp matches 11380.. as @a[distance=0..] at @s run playsound item.goat_horn.sound.0 record @s ~ ~ ~ 1 1

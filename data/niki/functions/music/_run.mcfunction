@@ -12,3 +12,4 @@ execute as @e[tag=nm_djmusicman] at @s run function niki:music/zrun/djmusicman
 execute as @e[tag=nm_stanleycount] at @s run function niki:music/zrun/stanleycount
 execute as @e[tag=nm_grazetheroof] at @s run function niki:music/zrun/grazetheroof
 execute as @e[tag=nm_bonetrousle] at @s run function niki:music/zrun/bonetrousle
+execute as @e[tag=nm_tomb] at @s run function niki:music/zrun/tomb

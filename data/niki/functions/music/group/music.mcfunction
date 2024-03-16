@@ -13,5 +13,6 @@ execute as @e[tag=1,limit=1] if score @s nikimusic matches 6 run return run func
 execute as @e[tag=1,limit=1] if score @s nikimusic matches 7 run return run function niki:music/play/stanley_countdown
 execute as @e[tag=1,limit=1] if score @s nikimusic matches 8 run return run function niki:music/play/graze_the_roof
 execute as @e[tag=1,limit=1] if score @s nikimusic matches 9 run return run function niki:music/play/bonetrousle
+execute as @e[tag=1,limit=1] if score @s nikimusic matches 10 run return run function niki:music/play/tomb
 
 return -80
