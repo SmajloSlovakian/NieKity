@@ -3,7 +3,7 @@ execute as @e[x=51,y=5,z=-20,dx=4,dz=2] run scoreboard players add starthraci sp
 execute if score starthraci sp1 matches 2.. run scoreboard players add start sp1 1
 
 execute unless score starthraci sp1 matches 2.. run scoreboard players set start sp1 0
-execute if entity @a[x=51,y=5,z=-20,dx=4,dz=3,predicate=niki:skrc] run scoreboard players set start sp1 0
+execute if entity @a[x=51,y=5,z=-20,dx=4,dz=3,predicate=niki:blockstart] run scoreboard players set start sp1 0
 
 execute if score start sp1 matches 0 as @a[x=51,y=5,z=-20,dx=4,dz=3] run function niki:text/odpocet1/stop
 execute if score niki:1 vhre matches 1 if score start sp1 matches 1 as @e[x=51,y=5,z=-20,dx=4,dz=3] run function niki:text/odpocet1/vhre

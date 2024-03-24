@@ -1,0 +1,12 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "score",
+        "target": {
+            "type": "fixed",
+            "name": "party"
+        },
+        "score": "lobby"
+    },
+    "range": 1
+}

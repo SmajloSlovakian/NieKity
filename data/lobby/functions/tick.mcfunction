@@ -15,6 +15,11 @@ scoreboard players enable @a lobby
 #sledovanie znovuzrodenia hráča po úmrtí
 scoreboard players set @a[scores={umrel2=1..}] deathtimep 1
 
+#zadávanie premennej crouch na hráčoch
+execute as @a[predicate=niki:iscrouching ] run scoreboard players set @s crouch 1
+execute as @a[predicate=!niki:iscrouching] run scoreboard players set @s crouch 0
+scoreboard players operation pártyleader crouch = @a[tag=partyleader,limit=1] crouch
+
 #ticky minihier
 function niki:tick
 function pvp1:tick
@@ -72,3 +77,6 @@ scoreboard players set @a umrel2 0
 scoreboard players set gaméskipcheck gametime 1
 
 execute if score lagsim nikimath matches 1.. run function niki:lagsim
+
+
+# (crouching && !party) || (party && partyleader[iscrouching])

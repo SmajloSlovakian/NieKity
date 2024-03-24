@@ -8,3 +8,4 @@ execute at @p[scores={zabil=1..}] as @a[team=sw1.2] run function niki:text/zivot
 scoreboard players set @p[scores={zabil=1..}] zabil 0
 
 function sw1:fallingchest
+function sw1:umrtie/updatemusic

@@ -1,8 +1,8 @@
 #skúška hráčov na hru
 execute if entity @e[x=-198,y=114,z=2,dz=1] if entity @e[x=-202,y=114,z=2,dz=1] run scoreboard players add start pvp2 1
 
-execute if entity @a[x=-198,y=114,z=2,dz=1,predicate=niki:skrc] run scoreboard players set start pvp2 0
-execute if entity @a[x=-202,y=114,z=2,dz=1,predicate=niki:skrc] run scoreboard players set start pvp2 0
+execute if entity @a[x=-198,y=114,z=2,dz=1,predicate=niki:blockstart] run scoreboard players set start pvp2 0
+execute if entity @a[x=-202,y=114,z=2,dz=1,predicate=niki:blockstart] run scoreboard players set start pvp2 0
 execute unless entity @e[x=-198,y=114,z=2,dz=1] run scoreboard players set start pvp2 0
 execute unless entity @e[x=-202,y=114,z=2,dz=1] run scoreboard players set start pvp2 0
 

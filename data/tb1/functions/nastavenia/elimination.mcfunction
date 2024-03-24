@@ -1,5 +1,6 @@
-execute if score party lobby matches 1 unless entity @s[tag=partyleader] run function niki:text/nedostupne
-execute if score party lobby matches 1 unless entity @s[tag=partyleader] run return 0
+execute if score party lobby matches 1 unless entity @s[tag=partyleader] run return run function niki:text/nedostupne
+execute if score koniec tb1vhre matches 1 run return run function niki:text/nedostupne
+execute if score odpočet tb1casovac matches 20.. run return run function niki:text/nedostupne
 
 scoreboard players add elimination tb1koniec 1
 execute if score elimination tb1koniec matches 2 run scoreboard players set elimination tb1koniec 0

@@ -1,5 +1,5 @@
-execute if score party lobby matches 1 if entity @s[tag=!partyleader,tag=!partytp] run function niki:text/nedostupne
-execute if score party lobby matches 1 if entity @s[tag=!partyleader,tag=!partytp] run return 0
+scoreboard players set @s lobby 0
+execute if score party lobby matches 1 if entity @s[tag=!partyleader,tag=!partytp] run return run function niki:text/nedostupne
 
 execute if score party lobby matches 1 if entity @s[tag=!partytp] run tag @a[tag=!partyleader] add partytp
 execute if score party lobby matches 1 if entity @s[tag=!partytp] as @a[tag=!partyleader] run function lobby:tp
@@ -21,10 +21,10 @@ execute in minecraft:overworld run spawnpoint @s 0 3 0 0
 function niki:text/tp/lobby
 execute if entity @s[gamemode=!creative,scores={lobby=1}] run function niki:kill
 execute if entity @s[gamemode=!creative] run gamemode adventure
-scoreboard players set @s lobby 0
 
-execute as @a[scores={textspeed=3}] run title @s times 0t 10t 0t
-execute as @a[scores={textspeed=4}] run title @s times 5t 5t 5t
-execute as @a[scores={textspeed=0}] run title @s times 5t 30t 5t
-execute as @a[scores={textspeed=1}] run title @s times 10t 40t 10t
-execute as @a[scores={textspeed=2}] run title @s times 10t 70t 20t
+execute unless score @s textspeed matches -200..200 run scoreboard players set @s textspeed 0
+title @s[scores={textspeed=3}] times 0t 10t 0t
+title @s[scores={textspeed=4}] times 5t 5t 5t
+title @s[scores={textspeed=0}] times 5t 30t 5t
+title @s[scores={textspeed=1}] times 10t 40t 10t
+title @s[scores={textspeed=2}] times 10t 70t 20t

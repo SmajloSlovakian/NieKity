@@ -42,8 +42,8 @@
               }
             },
             {
-              "function": "minecraft:set_name",
-              "name": "EggsRay"
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"EggsRay\"}'}}"
             }
           ]
         },

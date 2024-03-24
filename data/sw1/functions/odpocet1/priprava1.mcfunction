@@ -1,6 +1,7 @@
 function sw1:mapspec/_run/struct
 scoreboard players set start sw1casovac 0
 scoreboard players set koniec sw1vhre 1
+scoreboard players set hráči sw1nastavenia 0
 execute as @a[team=sw1.1] run function sw1:odpocet1/priprava2
 execute as @a[team=sw1.2] run function sw1:odpocet1/priprava2
 

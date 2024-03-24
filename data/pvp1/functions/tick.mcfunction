@@ -3,8 +3,8 @@ execute if entity @e[x=1,y=20,z=14,dx=1] if entity @e[x=-2,y=20,z=14,dx=1] run s
 
 execute unless score start pvp1 matches 101.. unless entity @e[x=1,y=20,z=14,dx=1] run scoreboard players set start pvp1 0
 execute unless score start pvp1 matches 101.. unless entity @e[x=-2,y=20,z=14,dx=1] run scoreboard players set start pvp1 0
-execute unless score start pvp1 matches 101.. if entity @a[x=1,y=20,z=14,dx=1,predicate=niki:skrc] run scoreboard players set start pvp1 0
-execute unless score start pvp1 matches 101.. if entity @a[x=-2,y=20,z=14,dx=1,predicate=niki:skrc] run scoreboard players set start pvp1 0
+execute unless score start pvp1 matches 101.. if entity @a[x=1,y=20,z=14,dx=1,predicate=niki:blockstart] run scoreboard players set start pvp1 0
+execute unless score start pvp1 matches 101.. if entity @a[x=-2,y=20,z=14,dx=1,predicate=niki:blockstart] run scoreboard players set start pvp1 0
 
 execute if score start pvp1 matches 0 as @a[x=0,y=20,z=10,distance=..5] run function niki:text/odpocet1/stop
 execute if score niki:1 vhre matches 1 if score start pvp1 matches 1 as @a[x=0,y=20,z=10,distance=..5] run function niki:text/odpocet1/vhre

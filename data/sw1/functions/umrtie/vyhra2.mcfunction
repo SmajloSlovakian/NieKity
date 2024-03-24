@@ -1,5 +1,5 @@
 execute as @a[distance=0..] in overworld run spawnpoint @s 0 101 -200 180
-execute as @a[distance=0..] in overworld run gamemode adventure @s
+execute as @a[distance=0..] run gamemode adventure @s
 tag @a[distance=0..] remove sw1.p
 tag @a[distance=0..] remove vhre
 team empty sw1.1

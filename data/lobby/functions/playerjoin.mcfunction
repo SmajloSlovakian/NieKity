@@ -5,7 +5,7 @@ execute if score party lobby matches 1 if entity @a[tag=vhre] run function lobby
 execute if score party lobby matches 1 unless entity @a[tag=vhre] run tp @r
 
 tellraw @s {"text": "Pre správne nastavenie hlasitosti niektorých zvukov potrebuješ použiť mód Volume Fix.\n - Zvukové efekty sú pod Hlas/Reč\n - Hudba je pod Zvukové kocky","color": "#FF8000"}
-tellraw s_smile_k {"text": "Pridať treba deathtimep objective","color": "red"}
+tellraw s_smile_k {"text": "","color": "red"}
 
 
 

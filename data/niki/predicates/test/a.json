@@ -1,0 +1,12 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "score",
+        "score": "crouch",
+        "target": {
+            "type": "fixed",
+            "name": "pártyleader"
+        }
+    },
+    "range": 0
+}
