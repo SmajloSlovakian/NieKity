@@ -3,8 +3,8 @@ execute if score gaméskipcheck gametime matches 0 run function niki:error/funct
 execute if score gaméskipcheck gametime matches -1 run return 0
 scoreboard players set gaméskipcheck gametime 0
 
-#deltatime pomôcka
-execute if score dtactive nikimath matches 1 store result score tickstoadd nikimath run function deltatime:tickstoadd
+#deltatime
+scoreboard players operation tickstoadd nikimath = tickstoadd deltatime
 
 #sledovanie pripojenia hráča
 execute store result score gamétimé gametime run time query gametime
