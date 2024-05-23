@@ -1,0 +1,1 @@
+scoreboard players set state nikimini 0

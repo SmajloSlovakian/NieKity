@@ -2,7 +2,6 @@
 scoreboard players set a nikimath 0
 # počet validných tímov
 scoreboard players set b nikimath 0
-scoreboard players set c nikimath 0
 
 execute if entity @a[tag=1,predicate=niki:blockstart] run return 0
 execute as @a[tag=1] run scoreboard players add a nikimath 1

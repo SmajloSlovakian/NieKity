@@ -22,15 +22,16 @@ scoreboard players operation pártyleader crouch = @a[tag=partyleader,limit=1] c
 
 #ticky minihier
 function niki:tick
-function pvp1:tick
-function tb1:tick
-function pvp2:tick
-function sw1:tick
-function bw1:tick
-function hc1:tick
-function hs1:tick
-function sp1:tick
-function ds1:tick
+function mini:tick
+#function pvp1:tick
+#function tb1:tick
+#function pvp2:tick
+#function sw1:tick
+#function bw1:tick
+#function hc1:tick
+#function hs1:tick
+#function sp1:tick
+#function ds1:tick
 
 #automatické vypnutie automatického ukladania keď je nejaká minihra zapnutá pre zabránenie zásekom
 execute if score forcesave nikimath matches 0 if entity @a[tag=vhre] run save-off
