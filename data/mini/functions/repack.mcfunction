@@ -1,6 +1,7 @@
 #scoreboard to marker data
 execute store result entity @s data.minitype int 1 run scoreboard players get minitype nikimini
-execute store result entity @s data.state int 1 run scoreboard players get state nikimini
+execute store result entity @s data.instate int 1 run scoreboard players get state nikimini
+
 execute store result entity @s data.started int 1 run scoreboard players get started nikimini
 execute store result entity @s data.teams int 1 run scoreboard players get teams nikimini
 

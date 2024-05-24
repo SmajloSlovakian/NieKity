@@ -32,4 +32,5 @@ execute unless score a nikimath >= minplayers nikimini unless score a nikimath m
 execute if score a nikimath matches 1.. run scoreboard players add b nikimath 1
 
 execute if score b nikimath < minteams nikimini run return 0
+#say enough playerteams amount 1: @a[tag=1] 2: @a[tag=2] 3: @a[tag=3] 4: @a[tag=4]
 return 1

@@ -7,3 +7,4 @@ function mini:core/utility/unreservedim
 tag @a[tag=1] remove spect
 gamemode adventure @a[tag=1]
 function niki:killeverything
+kill @s

@@ -1,6 +1,6 @@
 #marker data to scoreboard
 execute store result score minitype nikimini run data get entity @s data.minitype
-execute store result score state nikimini run data get entity @s data.state
+execute store result score state nikimini run data get entity @s data.instate
 execute store result score started nikimini run data get entity @s data.started
 execute store result score teams nikimini run data get entity @s data.teams
 
