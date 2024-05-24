@@ -1,1 +1,1 @@
-tellraw @a {"text": "Error: No minigame instance found in this dimension!","color": "red"}
+tellraw @a {"text": "Error: Minigame position not linked to game instance!","color": "red"}

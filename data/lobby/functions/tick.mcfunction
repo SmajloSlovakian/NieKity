@@ -20,6 +20,8 @@ execute as @a[predicate=niki:iscrouching ] run scoreboard players set @s crouch 
 execute as @a[predicate=!niki:iscrouching] run scoreboard players set @s crouch 0
 scoreboard players operation pártyleader crouch = @a[tag=partyleader,limit=1] crouch
 
+execute if entity @a[distance=..3,scores={miniid=1..},gamemode=!creative] run function mini:interface/tptomyminipos
+
 #ticky minihier
 function niki:tick
 function mini:tickall
