@@ -10,9 +10,10 @@ execute if score timer nikimini matches ..0 run function mini:core/game/utility/
 
 execute as @a[tag=1,scores={umrel=1..}] run function mini:core/game/death
 
-execute as @a[tag=1,tag=tohandledeath,scores={deathtimep=0}] run function mini:core/game/givekit
+execute as @a[tag=1,tag=tohandledeath,scores={deathtimep=0}] run function mini:core/game/latedeath
 tag @a[tag=1,tag=tohandledeath,scores={deathtimep=0}] remove tohandledeath
 
+function mini:core/mapspec/tick
 
 
 

@@ -1,4 +1,5 @@
-spawnpoint @s[team=nikib] 6 2 0 90
-spawnpoint @s[team=nikir] -6 2 0 -90
-spawnpoint @s[team=nikiy] 0 2 6 180
-spawnpoint @s[team=nikig] 0 2 -6 0
+execute as @s[team=nikir] run return run spawnpoint @s -6 2 0 -90
+execute as @s[team=nikib] run return run spawnpoint @s 6 2 0 90
+execute as @s[team=nikiy] run return run spawnpoint @s 0 2 6 180
+execute as @s[team=nikig] run return run spawnpoint @s 0 2 -6 0
+return 0
