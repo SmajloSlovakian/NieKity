@@ -5,6 +5,8 @@ execute store result score minitype nikimini run data get storage niki:nbt Buffe
 execute store result score state nikimini run data get storage niki:nbt Buffer.state
 execute store result score started nikimini run data get storage niki:nbt Buffer.started
 execute store result score teams nikimini run data get storage niki:nbt Buffer.teams
+execute store result score timewitoutplayers nikimini run data get storage niki:nbt Buffer.timewitoutplayers
+execute store result score noplayertimeout nikimini run data get storage niki:nbt Buffer.noplayertimeout
 
 execute store result score minplayers nikimini run data get storage niki:nbt Buffer.minplayers
 execute store result score minteams nikimini run data get storage niki:nbt Buffer.minteams
@@ -22,3 +24,15 @@ execute store result score anthem nikimini run data get storage niki:nbt Buffer.
 execute store result score kitondeath nikimini run data get storage niki:nbt Buffer.kitondeath
 execute store result score t1chestsondeath nikimini run data get storage niki:nbt Buffer.t1chestsondeath
 execute store result score t2chestsondeath nikimini run data get storage niki:nbt Buffer.t2chestsondeath
+execute store result score attackspeed nikimini run data get storage niki:nbt Buffer.attackspeed
+execute store result score gamemode nikimini run data get storage niki:nbt Buffer.gamemode
+
+execute store result score instantvoid nikimini run data get storage niki:nbt Buffer.instantvoid
+execute store result score scorer nikimini run data get storage niki:nbt Buffer.scorer
+execute store result score scoreb nikimini run data get storage niki:nbt Buffer.scoreb
+execute store result score scorey nikimini run data get storage niki:nbt Buffer.scorey
+execute store result score scoreg nikimini run data get storage niki:nbt Buffer.scoreg
+execute store result score scoretype nikimini run data get storage niki:nbt Buffer.scoretype
+execute store result score startscore nikimini run data get storage niki:nbt Buffer.startscore
+execute store result score targetscore nikimini run data get storage niki:nbt Buffer.targetscore
+execute store result score vacuumtype nikimini run data get storage niki:nbt Buffer.vacuumtype

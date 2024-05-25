@@ -6,3 +6,4 @@ execute if score map nikimini matches 3 run function mini:core/mapspec/sumopokem
 execute if score map nikimini matches 4 run function mini:core/mapspec/muchotravka/clearspawn
 execute if score map nikimini matches 5 run function mini:core/mapspec/deepdark/clearspawn
 execute if score map nikimini matches 6 run function mini:core/mapspec/sakura/clearspawn
+execute if score map nikimini matches 7 run function mini:core/mapspec/zuby/clearspawn

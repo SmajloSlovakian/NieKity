@@ -2,8 +2,7 @@ function niki:cleartag
 function mini:helper/tagallto1
 execute if score timer nikimini matches -10000 if entity @a[scores={deathtimep=1..}] run return 1
 
-
-execute if score timer nikimini matches -10000 as @a[tag=1] run function mini:core/game/givekit
+execute if score timer nikimini matches -10000 run function mini:core/game/latestart
 
 execute if score timer nikimini matches -9980 run scoreboard players set timer nikimini -60
 execute if score timer nikimini matches ..0 run function mini:core/game/utility/timercountdown
@@ -15,8 +14,13 @@ tag @a[tag=1,tag=tohandledeath,scores={deathtimep=0}] remove tohandledeath
 
 function mini:core/mapspec/tick
 
+execute if score dimtype nikimini matches 1 run function niki:border
 
+execute unless entity @a[tag=1] run scoreboard players remove timewithoutplayers nikimini 1
+execute if entity @a[tag=1] run scoreboard players operation timewithoutplayers nikimini = noplayertimeout nikimini
+execute if score timewithoutplayers nikimini matches ..0 run function mini:core/game/end
 
 execute if score anthem nikimini matches 1.. run scoreboard players remove anthem nikimini 1
 execute if score anthem nikimini matches 1 run function mini:core/game/end
+
 scoreboard players add timer nikimini 1

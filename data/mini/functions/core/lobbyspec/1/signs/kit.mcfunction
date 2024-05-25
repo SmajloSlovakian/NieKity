@@ -1,20 +1,9 @@
 execute if score party lobby matches 1 unless entity @s[tag=partyleader] run return run function niki:text/nedostupne
-#execute if score start pvp1 matches 40.. run return run function niki:text/nedostupne
 execute if entity @e[tag=nikimini,nbt={data:{state:1,minitype:1}}] run return run function niki:text/nedostupne
-
-data modify storage niki:nbt Buffer set from storage lobby:signsettings setvalues[0].kit
-
-execute positioned 3 21 8 run function niki:handlesignsetting with storage niki:nbt setvalues[0].kit
-
-
-
-scoreboard players add kit pvp1 1
-execute if score kit pvp1 matches 5.. run scoreboard players set kit pvp1 0
-
-execute if score kit pvp1 matches 0 run data merge block 3 21 8 {front_text:{messages:['{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function pvp1:nastavenia/kit"}}','{"text":"Kryštál","color":"#808080"}','[{"text":"> ","color":"#00FF00"},{"text":"Žiadny","color":"#8000FF"},{"text":" <","color":"#00FF00"}]','{"text":"Overpower","color":"#808080"}']}}
-execute if score kit pvp1 matches 1 run data merge block 3 21 8 {front_text:{messages:['{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function pvp1:nastavenia/kit"}}','{"text":"Žiadny","color":"#808080"}','[{"text":"> ","color":"#00FF00"},{"text":"Overpower","color":"#00FFFF"},{"text":" <","color":"#00FF00"}]','{"text":"Rýchlohra","color":"#808080"}']}}
-execute if score kit pvp1 matches 2 run data merge block 3 21 8 {front_text:{messages:['{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function pvp1:nastavenia/kit"}}','{"text":"Overpower","color":"#808080"}','[{"text":"> ","color":"#00FF00"},{"text":"Rýchlohra","color":"#FFFF00"},{"text":" <","color":"#00FF00"}]','{"text":"Strieľačka","color":"#808080"}']}}
-execute if score kit pvp1 matches 3 run data merge block 3 21 8 {front_text:{messages:['{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function pvp1:nastavenia/kit"}}','{"text":"Rýchlohra","color":"#808080"}','[{"text":"> ","color":"#00FF00"},{"text":"Strieľačka","color":"#CCCCCC"},{"text":" <","color":"#00FF00"}]','{"text":"Kryštál","color":"#808080"}']}}
-execute if score kit pvp1 matches 4 run data merge block 3 21 8 {front_text:{messages:['{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function pvp1:nastavenia/kit"}}','{"text":"Strieľačka","color":"#808080"}','[{"text":"> ","color":"#00FF00"},{"text":"Kryštál","color":"#000000"},{"text":" <","color":"#00FF00"}]','{"text":"Žiadny","color":"#808080"}']}}
-
 execute as @s run playsound block.stone_button.click_on voice @a
+
+data modify storage niki:nbt Buffer set value {}
+data modify storage niki:nbt Buffer set from storage lobby:signsettings setvalues[0].kit
+execute positioned 3 21 8 run function niki:handlesignsetting
+data modify block 3 21 8 front_text.messages[0] set value '{"text":"Kit","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function mini:core/lobbyspec/1/signs/kit"}}'
+data modify storage lobby:signsettings setvalues[0].kit set from storage niki:nbt Buffer

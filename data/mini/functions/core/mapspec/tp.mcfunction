@@ -6,5 +6,6 @@ execute if score map nikimini matches 3 if function mini:core/mapspec/sumopokemo
 execute if score map nikimini matches 4 if function mini:core/mapspec/muchotravka/tp run return 1
 execute if score map nikimini matches 5 if function mini:core/mapspec/deepdark/tp run return 1
 execute if score map nikimini matches 6 if function mini:core/mapspec/sakura/tp run return 1
+execute if score map nikimini matches 7 if function mini:core/mapspec/zuby/tp run return 1
 
 tp ~ ~ ~

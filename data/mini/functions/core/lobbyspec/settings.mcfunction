@@ -12,5 +12,8 @@ scoreboard players set minispec nikimini 0
 scoreboard players set kitondeath nikimini 1
 scoreboard players set t1chestsondeath nikimini 0
 scoreboard players set t2chestsondeath nikimini 0
+scoreboard players set attackspeed nikimini 0
+scoreboard players set gamemode nikimini 0
+scoreboard players set noplayertimeout nikimini 1200
 
 execute if score minitype nikimini matches 1 run function mini:core/lobbyspec/1/settings

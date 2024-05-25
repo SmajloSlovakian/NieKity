@@ -7,15 +7,7 @@ execute if score party lobby matches 1 if entity @s[tag=!partytp] run tag @a rem
 
 team leave @s
 tag @s remove vhre
-tag @s remove sw1.p
-tag @s remove sp1.p
-tag @s remove tb1.p
-tag @s remove bw1.p
-tag @s remove hc1.p
-tag @s remove hs1.p
-tag @s remove ds1.p
-tag @s remove pvp1.p
-tag @s remove pvp2.p
+tag @s remove spect
 execute in minecraft:overworld run tp @s 0 3 0 0 0
 execute in minecraft:overworld run spawnpoint @s 0 3 0 0
 function niki:text/tp/lobby

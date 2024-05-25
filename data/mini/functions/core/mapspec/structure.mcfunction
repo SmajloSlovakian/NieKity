@@ -6,3 +6,4 @@ execute if score map nikimini matches 3 run place template niki:sumo -9 0 -8
 execute if score map nikimini matches 4 run function mini:core/mapspec/muchotravka/struct
 execute if score map nikimini matches 5 run function mini:core/mapspec/deepdark/struct
 execute if score map nikimini matches 6 run function mini:core/mapspec/sakura/struct
+execute if score map nikimini matches 7 run function mini:core/mapspec/zuby/struct
