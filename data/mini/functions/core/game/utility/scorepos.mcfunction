@@ -15,7 +15,7 @@ execute if score scoreb nikimini = targetscore nikimini run tag @a remove 3
 execute if score scorey nikimini = targetscore nikimini run tag @a remove 4
 execute if score scoreg nikimini = targetscore nikimini run tag @a remove 5
 
-execute as @a[tag=2] run function niki:killtohandle
-execute as @a[tag=3] run function niki:killtohandle
-execute as @a[tag=4] run function niki:killtohandle
-execute as @a[tag=5] run function niki:killtohandle
+execute as @a[tag=2] run tag @s add tokillandhandle
+execute as @a[tag=3] run tag @s add tokillandhandle
+execute as @a[tag=4] run tag @s add tokillandhandle
+execute as @a[tag=5] run tag @s add tokillandhandle
