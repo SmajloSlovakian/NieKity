@@ -27,6 +27,7 @@ execute store result storage niki:nbt Buffer.t2chestsondeath int 1 run scoreboar
 execute store result storage niki:nbt Buffer.attackspeed int 1 run scoreboard players get attackspeed nikimini
 execute store result storage niki:nbt Buffer.gamemode int 1 run scoreboard players get gamemode nikimini
 execute store result storage niki:nbt Buffer.instantvoid int 1 run scoreboard players get instantvoid nikimini
+execute store result storage niki:nbt Buffer.vacuumtype int 1 run scoreboard players get vacuumtype nikimini
 execute store result storage niki:nbt Buffer.scorer int 1 run scoreboard players get scorer nikimini
 execute store result storage niki:nbt Buffer.scoreb int 1 run scoreboard players get scoreb nikimini
 execute store result storage niki:nbt Buffer.scorey int 1 run scoreboard players get scorey nikimini
@@ -34,6 +35,6 @@ execute store result storage niki:nbt Buffer.scoreg int 1 run scoreboard players
 execute store result storage niki:nbt Buffer.scoretype int 1 run scoreboard players get scoretype nikimini
 execute store result storage niki:nbt Buffer.startscore int 1 run scoreboard players get startscore nikimini
 execute store result storage niki:nbt Buffer.targetscore int 1 run scoreboard players get targetscore nikimini
-execute store result storage niki:nbt Buffer.vacuumtype int 1 run scoreboard players get vacuumtype nikimini
+execute store result storage niki:nbt Buffer.scoredisplay int 1 run scoreboard players get scoredisplay nikimini
 
 data modify entity @s data set from storage niki:nbt Buffer

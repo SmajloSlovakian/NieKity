@@ -4,6 +4,6 @@ execute as @s run playsound block.stone_button.click_on voice @a
 
 data modify storage niki:nbt Buffer set value {}
 data modify storage niki:nbt Buffer set from storage lobby:signsettings setvalues[0].attackspeed
-execute positioned 3 22 9 run function niki:handlesignsetting
+function niki:handlesignsetting
 data modify block 3 22 9 front_text.messages[0] set value '{"text":"Rýchlosť útoku","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function mini:core/lobbyspec/1/signs/attackspeed"}}'
 data modify storage lobby:signsettings setvalues[0].attackspeed set from storage niki:nbt Buffer

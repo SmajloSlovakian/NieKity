@@ -10,6 +10,7 @@ tag @s remove vhre
 tag @s remove spect
 execute in minecraft:overworld run tp @s 0 3 0 0 0
 execute in minecraft:overworld run spawnpoint @s 0 3 0 0
+scoreboard players set @s miniid 0
 function niki:text/tp/lobby
 execute if entity @s[gamemode=!creative,scores={lobby=1}] run function niki:kill
 execute if entity @s[gamemode=!creative] run gamemode adventure

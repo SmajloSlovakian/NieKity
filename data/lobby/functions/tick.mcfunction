@@ -77,8 +77,8 @@ execute as @a[scores={umrel2=1..}] run scoreboard players set @s deathtimep 1
 scoreboard players set @a umrel 0
 scoreboard players set @a umrel2 0
 
+function lobby:lateexecute
 scoreboard players set gaméskipcheck gametime 1
-
 execute if score lagsim nikimath matches 1.. run function niki:lagsim
 
 

@@ -80,7 +80,7 @@ team modify nikiy color yellow
 team modify nikiy friendlyFire false
 
 team add nikig
-team modify nikig color red
+team modify nikig color green
 team modify nikig friendlyFire false
 
 team add nikia

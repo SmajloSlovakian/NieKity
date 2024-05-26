@@ -1,2 +1,2 @@
-execute as @a[tag=1] run function mini:core/game/givekit
-execute as @a[tag=1] run function mini:core/game/setattributes
+execute as @a[tag=1] run function mini:core/game/utility/givekit
+execute as @a[tag=1] run function mini:core/game/utility/setattributes
