@@ -1,3 +1,4 @@
+scoreboard players set @e tokill 0
 gamerule showDeathMessages false
 gamerule doEntityDrops false
 clear @s

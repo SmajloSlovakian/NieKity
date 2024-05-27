@@ -8,7 +8,7 @@ execute if score timer nikimini matches ..0 run function mini:core/game/utility/
 
 function mini:core/mapspec/tick
 
-execute if score instantvoid nikimini matches 1 run tag @a[tag=1,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] add tovoidkill
+execute if score instantvoid nikimini matches 1 as @a[tag=1,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
 
 execute if score vacuumtype nikimini matches 1 run kill @e[distance=0..,type=item]
 execute if score vacuumtype nikimini matches 2 run kill @e[distance=0..,predicate=bw1:vysavac]

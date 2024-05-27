@@ -6,6 +6,12 @@ scoreboard players set gaméskipcheck gametime 0
 #deltatime
 scoreboard players operation tickstoadd nikimath = tickstoadd deltatime
 
+function niki:cleartag
+execute as @e[scores={tokill=2}] run function niki:killtohandle
+execute as @e[scores={tokill=3}] run function niki:voidkill
+execute as @e[scores={tokill=1}] run function niki:kill
+
+
 #sledovanie pripojenia hráča
 execute store result score gamétimé gametime run time query gametime
 scoreboard players add @a gametime 1
@@ -76,12 +82,6 @@ execute as @a[scores={umrel2=1..}] run scoreboard players set @s deathtimep 1
 #set death to false
 scoreboard players set @a umrel 0
 scoreboard players set @a umrel2 0
-
-function niki:cleartag
-execute as @e[tag=tokillandhandle,tag=!alreadykilled] run function lobby:latekill/nikiandhlandle
-execute as @e[tag=tovoidkill,tag=!alreadykilled] run function lobby:latekill/void
-execute as @e[tag=tonikikill,tag=!alreadykilled] run function lobby:latekill/niki
-tag @e[tag=!tokillandhandle,tag=!tovoidkill,tag=!tonikikill] remove alreadykilled
 
 function lobby:lateexecute
 scoreboard players set gaméskipcheck gametime 1

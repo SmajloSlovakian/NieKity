@@ -1,3 +1,1 @@
-tag @s add alreadykilled
-tag @s remove tonikikill
-function niki:kill
+scoreboard players set @s tokill 1

@@ -35,5 +35,10 @@ execute store result score scoreg nikimini run data get storage niki:nbt Buffer.
 execute store result score scoretype nikimini run data get storage niki:nbt Buffer.scoretype
 execute store result score startscore nikimini run data get storage niki:nbt Buffer.startscore
 execute store result score targetscore nikimini run data get storage niki:nbt Buffer.targetscore
-
 execute store result score scoredisplay nikimini run data get storage niki:nbt Buffer.scoredisplay
+
+execute store result score outoforder nikimini run data get storage niki:nbt Buffer.outoforder
+execute store result score startbarrier nikimini run data get storage niki:nbt Buffer.startbarrier
+execute store result score pauseonscore nikimini run data get storage niki:nbt Buffer.pauseonscore
+execute store result score nikianthem nikimini run data get storage niki:nbt Buffer.nikianthem
+execute store result score nikimusic nikimini run data get storage niki:nbt Buffer.nikimusic

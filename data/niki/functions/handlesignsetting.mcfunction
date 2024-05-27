@@ -17,6 +17,4 @@ scoreboard players add a nikimath 1
 execute if score a nikimath >= b nikimath run scoreboard players set a nikimath 0
 execute store result storage niki:nbt Buffer.nextvalue int 1 run scoreboard players get a nikimath
 
-
-function niki:help/signsetting2 with storage niki:nbt Buffer
-
+function niki:drawsignsetting with storage niki:nbt Buffer

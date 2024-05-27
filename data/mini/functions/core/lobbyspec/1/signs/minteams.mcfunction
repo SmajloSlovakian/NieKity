@@ -3,7 +3,7 @@ execute if entity @e[tag=nikimini,nbt={data:{state:1,minitype:1}}] run return ru
 execute as @s run playsound block.stone_button.click_on voice @a
 
 data modify storage niki:nbt Buffer set value {}
-data modify storage niki:nbt Buffer set from storage lobby:signsettings setvalues[0].minteams
+data modify storage niki:nbt Buffer set from storage lobby:signsettings setvalues[1].minteams
 function niki:handlesignsetting
 data modify block ~ ~ ~ front_text.messages[0] set value '{"text":"Minimum tímov","color":"#FFFFFF","clickEvent":{"action":"run_command","value":"function mini:core/lobbyspec/1/signs/minteams"}}'
-data modify storage lobby:signsettings setvalues[0].minteams set from storage niki:nbt Buffer
+data modify storage lobby:signsettings setvalues[1].minteams set from storage niki:nbt Buffer

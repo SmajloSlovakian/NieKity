@@ -36,5 +36,10 @@ execute store result storage niki:nbt Buffer.scoretype int 1 run scoreboard play
 execute store result storage niki:nbt Buffer.startscore int 1 run scoreboard players get startscore nikimini
 execute store result storage niki:nbt Buffer.targetscore int 1 run scoreboard players get targetscore nikimini
 execute store result storage niki:nbt Buffer.scoredisplay int 1 run scoreboard players get scoredisplay nikimini
+execute store result storage niki:nbt Buffer.outoforder int 1 run scoreboard players get outoforder nikimini
+execute store result storage niki:nbt Buffer.startbarrier int 1 run scoreboard players get startbarrier nikimini
+execute store result storage niki:nbt Buffer.pauseonscore int 1 run scoreboard players get pauseonscore nikimini
+execute store result storage niki:nbt Buffer.nikianthem int 1 run scoreboard players get nikianthem nikimini
+execute store result storage niki:nbt Buffer.nikimusic int 1 run scoreboard players get nikimusic nikimini
 
 data modify entity @s data set from storage niki:nbt Buffer

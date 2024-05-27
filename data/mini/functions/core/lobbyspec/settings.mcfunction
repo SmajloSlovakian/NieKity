@@ -18,8 +18,9 @@ scoreboard players set noplayertimeout nikimini 1200
 scoreboard players set instantvoid nikimini 0
 scoreboard players set scoretype nikimini 0
 scoreboard players set targetscore nikimini 0
+scoreboard players set scoredisplay nikimini 0
+scoreboard players set outoforder nikimini 0
 
 scoreboard players set startscore nikimini 0
-scoreboard players set scoredisplay nikimini 0
 
 execute if score minitype nikimini matches 1 run function mini:core/lobbyspec/1/settings
