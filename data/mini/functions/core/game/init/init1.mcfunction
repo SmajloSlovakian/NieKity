@@ -1,11 +1,4 @@
-
-function niki:cleartag
-function mini:helper/tagall
 function mini:helper/jointeam
-
-function niki:cleartag
-function mini:helper/tagallto1
-
 
 scoreboard players set state nikimini 2
 scoreboard players set started nikimini 1

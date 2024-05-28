@@ -13,9 +13,9 @@ execute if score targetscore nikimini matches ..-1 run scoreboard players operat
 execute if score targetscore nikimini matches ..-1 run scoreboard players operation e nikimath += b nikimath
 execute if score targetscore nikimini matches ..-1 run scoreboard players operation f nikimath += b nikimath
 
-execute unless entity @e[tag=1,team=nikir] run scoreboard players set c nikimath -1
-execute unless entity @e[tag=1,team=nikib] run scoreboard players set d nikimath -1
-execute unless entity @e[tag=1,team=nikiy] run scoreboard players set e nikimath -1
-execute unless entity @e[tag=1,team=nikig] run scoreboard players set f nikimath -1
+execute unless entity @e[scores={return=1..6},team=nikir] run scoreboard players set c nikimath -1
+execute unless entity @e[scores={return=1..6},team=nikib] run scoreboard players set d nikimath -1
+execute unless entity @e[scores={return=1..6},team=nikiy] run scoreboard players set e nikimath -1
+execute unless entity @e[scores={return=1..6},team=nikig] run scoreboard players set f nikimath -1
 
 function niki:dimensions/normal/updatebossbar

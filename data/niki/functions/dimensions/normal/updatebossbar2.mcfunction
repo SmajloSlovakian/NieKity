@@ -18,7 +18,7 @@ $execute if score d nikimath matches ..-1 run bossbar set $(name)/b visible fals
 $execute if score e nikimath matches ..-1 run bossbar set $(name)/y visible false
 $execute if score f nikimath matches ..-1 run bossbar set $(name)/g visible false
 
-$bossbar set $(name)/r players @a[tag=1]
-$bossbar set $(name)/b players @a[tag=1]
-$bossbar set $(name)/y players @a[tag=1]
-$bossbar set $(name)/g players @a[tag=1]
+$bossbar set $(name)/r players @a[scores={return=1..6}]
+$bossbar set $(name)/b players @a[scores={return=1..6}]
+$bossbar set $(name)/y players @a[scores={return=1..6}]
+$bossbar set $(name)/g players @a[scores={return=1..6}]
