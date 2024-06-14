@@ -34,4 +34,4 @@ tag @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:egg",tag:{display:{Name:'{"text
 scoreboard players enable @a jazyk
 
 #nikimusic
-function niki:music/_run
+function niki:music/tick

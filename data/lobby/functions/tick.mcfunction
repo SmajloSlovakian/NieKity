@@ -53,6 +53,7 @@ function mini:tickall
 
 #trigger lobby
 execute as @a[scores={lobby=1..}] run function lobby:tp
+scoreboard players set @a lobby 0
 
 #killed effect reset & iframes
 scoreboard players set @a[scores={umrel=1..}] efektovy 40
@@ -80,6 +81,7 @@ execute as @a store result score @s deathtimep run data get entity @s DeathTime
 execute as @a[scores={umrel2=1..}] run scoreboard players set @s deathtimep 1
 
 #set death to false
+scoreboard players set @a zabil 0
 scoreboard players set @a umrel 0
 scoreboard players set @a umrel2 0
 

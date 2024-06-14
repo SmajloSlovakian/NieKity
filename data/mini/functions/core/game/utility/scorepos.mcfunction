@@ -12,3 +12,7 @@ execute if score scorey nikimini = targetscore nikimini run scoreboard players s
 execute if score scoreg nikimini = targetscore nikimini run scoreboard players set @a[scores={return=5}] return 0
 
 execute as @a[scores={return=1..6}] run function niki:killtohandle
+
+execute if entity @a[scores={return=2..5}] run function mini:core/game/utility/scorehandler
+scoreboard players set @a return 0
+function mini:helper/returnall

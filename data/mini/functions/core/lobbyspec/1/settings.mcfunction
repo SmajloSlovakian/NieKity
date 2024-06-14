@@ -15,3 +15,5 @@ execute store result score scoredisplay nikimini run data get storage lobby:sign
 execute store result score minplayers nikimini run data get storage lobby:signsettings setvalues[1].minplayers.posval
 execute store result score minteams nikimini run data get storage lobby:signsettings setvalues[1].minteams.posval
 execute store result score vacuumtype nikimini run data get storage lobby:signsettings setvalues[1].vacuumtype.posval
+execute store result score startbarrier nikimini run data get storage lobby:signsettings setvalues[1].startbarrier.posval
+execute store result score pauseonscore nikimini run data get storage lobby:signsettings setvalues[1].pauseonscore.posval

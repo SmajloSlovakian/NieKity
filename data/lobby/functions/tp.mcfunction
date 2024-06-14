@@ -1,19 +1,16 @@
-scoreboard players set @s lobby 0
 execute if score party lobby matches 1 if entity @s[tag=!partyleader,tag=!partytp] run return run function niki:text/nedostupne
 
 execute if score party lobby matches 1 if entity @s[tag=!partytp] run tag @a[tag=!partyleader] add partytp
 execute if score party lobby matches 1 if entity @s[tag=!partytp] as @a[tag=!partyleader] run function lobby:tp
 execute if score party lobby matches 1 if entity @s[tag=!partytp] run tag @a remove partytp
 
-team leave @s
-tag @s remove vhre
-tag @s remove spect
+
+execute if score @s miniid matches 1.. if entity @s[scores={lobby=1}] run return run function mini:interface/disconnectplayer
 execute in minecraft:overworld run tp @s 0 3 0 0 0
 execute in minecraft:overworld run spawnpoint @s 0 3 0 0
-scoreboard players set @s miniid 0
 function niki:text/tp/lobby
 execute if entity @s[gamemode=!creative,scores={lobby=1}] run function niki:kill
-execute if entity @s[gamemode=!creative] run gamemode adventure
+execute if entity @s[gamemode=!creative,scores={lobby=1}] run gamemode adventure
 
 execute unless score @s textspeed matches -200..200 run scoreboard players set @s textspeed 0
 title @s[scores={textspeed=3}] times 0t 10t 0t

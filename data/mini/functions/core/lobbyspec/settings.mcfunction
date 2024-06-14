@@ -20,6 +20,9 @@ scoreboard players set scoretype nikimini 0
 scoreboard players set targetscore nikimini 0
 scoreboard players set scoredisplay nikimini 0
 scoreboard players set outoforder nikimini 0
+scoreboard players set startbarrier nikimini 0
+scoreboard players set vacuumtype nikimini 0
+scoreboard players set pauseonscore nikimini 0
 
 scoreboard players set startscore nikimini 0
 

@@ -1,6 +1,7 @@
 #execute as @p[scores={zabil=1..}] run function niki:text/zivoty
 #scoreboard players set @p[scores={zabil=1..}] zabil 0
 
+say smrť
 tag @s add tohandledeath
 execute on attacker run function niki:text/zivoty
 function mini:core/mapspec/clearspawn
