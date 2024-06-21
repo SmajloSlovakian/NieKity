@@ -10,6 +10,8 @@ execute store result score noplayertimeout nikimini run data get storage niki:nb
 execute store result score minplayers nikimini run data get storage niki:nbt Buffer.minplayers
 execute store result score minteams nikimini run data get storage niki:nbt Buffer.minteams
 execute store result score outoforder nikimini run data get storage niki:nbt Buffer.outoforder
+execute store result score dimtype nikimini run data get storage niki:nbt Buffer.dimtype
+execute store result score dimension nikimini run data get storage niki:nbt Buffer.dimension
 
 # timers
 execute store result score timewitoutplayers nikimini run data get storage niki:nbt Buffer.timewitoutplayers
@@ -17,37 +19,116 @@ execute store result score startcountdown nikimini run data get storage niki:nbt
 execute store result score timer nikimini run data get storage niki:nbt Buffer.timer
 execute store result score anthem nikimini run data get storage niki:nbt Buffer.anthem
 
-# constants
+# non-teamed constants
 execute store result score map nikimini run data get storage niki:nbt Buffer.map
-execute store result score kit nikimini run data get storage niki:nbt Buffer.kit
-execute store result score attackspeed nikimini run data get storage niki:nbt Buffer.attackspeed
-execute store result score gamemode nikimini run data get storage niki:nbt Buffer.gamemode
-execute store result score t1chestsondeath nikimini run data get storage niki:nbt Buffer.t1chestsondeath
-execute store result score t2chestsondeath nikimini run data get storage niki:nbt Buffer.t2chestsondeath
-execute store result score dimtype nikimini run data get storage niki:nbt Buffer.dimtype
-execute store result score dimension nikimini run data get storage niki:nbt Buffer.dimension
-execute store result score startbarrier nikimini run data get storage niki:nbt Buffer.startbarrier
-execute store result score kitondeath nikimini run data get storage niki:nbt Buffer.kitondeath
-execute store result score instantvoid nikimini run data get storage niki:nbt Buffer.instantvoid
 execute store result score vacuumtype nikimini run data get storage niki:nbt Buffer.vacuumtype
-execute store result score scoretype nikimini run data get storage niki:nbt Buffer.scoretype
-execute store result score startscore nikimini run data get storage niki:nbt Buffer.startscore
 execute store result score targetscore nikimini run data get storage niki:nbt Buffer.targetscore
 execute store result score scoredisplay nikimini run data get storage niki:nbt Buffer.scoredisplay
-execute store result score startbarrier nikimini run data get storage niki:nbt Buffer.startbarrier
+
+# teamed constants
+execute store result score kit.r nikimini run data get storage niki:nbt Buffer.kit.r
+execute store result score kit.b nikimini run data get storage niki:nbt Buffer.kit.b
+execute store result score kit.y nikimini run data get storage niki:nbt Buffer.kit.y
+execute store result score kit.g nikimini run data get storage niki:nbt Buffer.kit.g
+execute store result score kit.a nikimini run data get storage niki:nbt Buffer.kit.a
+execute store result score kit.p nikimini run data get storage niki:nbt Buffer.kit.p
+execute store result score attackspeed.r nikimini run data get storage niki:nbt Buffer.attackspeed.r
+execute store result score attackspeed.b nikimini run data get storage niki:nbt Buffer.attackspeed.b
+execute store result score attackspeed.y nikimini run data get storage niki:nbt Buffer.attackspeed.y
+execute store result score attackspeed.g nikimini run data get storage niki:nbt Buffer.attackspeed.g
+execute store result score attackspeed.a nikimini run data get storage niki:nbt Buffer.attackspeed.a
+execute store result score attackspeed.p nikimini run data get storage niki:nbt Buffer.attackspeed.p
+execute store result score gamemode.r nikimini run data get storage niki:nbt Buffer.gamemode.r
+execute store result score gamemode.b nikimini run data get storage niki:nbt Buffer.gamemode.b
+execute store result score gamemode.y nikimini run data get storage niki:nbt Buffer.gamemode.y
+execute store result score gamemode.g nikimini run data get storage niki:nbt Buffer.gamemode.g
+execute store result score gamemode.a nikimini run data get storage niki:nbt Buffer.gamemode.a
+execute store result score gamemode.p nikimini run data get storage niki:nbt Buffer.gamemode.p
+execute store result score t1chestsondeath.r nikimini run data get storage niki:nbt Buffer.t1chestsondeath.r
+execute store result score t1chestsondeath.b nikimini run data get storage niki:nbt Buffer.t1chestsondeath.b
+execute store result score t1chestsondeath.y nikimini run data get storage niki:nbt Buffer.t1chestsondeath.y
+execute store result score t1chestsondeath.g nikimini run data get storage niki:nbt Buffer.t1chestsondeath.g
+execute store result score t1chestsondeath.a nikimini run data get storage niki:nbt Buffer.t1chestsondeath.a
+execute store result score t1chestsondeath.p nikimini run data get storage niki:nbt Buffer.t1chestsondeath.p
+
+execute store result score t2chestsondeath.r nikimini run data get storage niki:nbt Buffer.t2chestsondeath.r
+execute store result score t2chestsondeath.b nikimini run data get storage niki:nbt Buffer.t2chestsondeath.b
+execute store result score t2chestsondeath.y nikimini run data get storage niki:nbt Buffer.t2chestsondeath.y
+execute store result score t2chestsondeath.g nikimini run data get storage niki:nbt Buffer.t2chestsondeath.g
+execute store result score t2chestsondeath.a nikimini run data get storage niki:nbt Buffer.t2chestsondeath.a
+execute store result score t2chestsondeath.p nikimini run data get storage niki:nbt Buffer.t2chestsondeath.p
+execute store result score startbarrier.r nikimini run data get storage niki:nbt Buffer.startbarrier.r
+execute store result score startbarrier.b nikimini run data get storage niki:nbt Buffer.startbarrier.b
+execute store result score startbarrier.y nikimini run data get storage niki:nbt Buffer.startbarrier.y
+execute store result score startbarrier.g nikimini run data get storage niki:nbt Buffer.startbarrier.g
+execute store result score startbarrier.a nikimini run data get storage niki:nbt Buffer.startbarrier.a
+execute store result score startbarrier.p nikimini run data get storage niki:nbt Buffer.startbarrier.p
+execute store result score kitondeath.r nikimini run data get storage niki:nbt Buffer.kitondeath.r
+execute store result score kitondeath.b nikimini run data get storage niki:nbt Buffer.kitondeath.b
+execute store result score kitondeath.y nikimini run data get storage niki:nbt Buffer.kitondeath.y
+execute store result score kitondeath.g nikimini run data get storage niki:nbt Buffer.kitondeath.g
+execute store result score kitondeath.a nikimini run data get storage niki:nbt Buffer.kitondeath.a
+execute store result score kitondeath.p nikimini run data get storage niki:nbt Buffer.kitondeath.p
+execute store result score instantvoid.r nikimini run data get storage niki:nbt Buffer.instantvoid.r
+execute store result score instantvoid.b nikimini run data get storage niki:nbt Buffer.instantvoid.b
+execute store result score instantvoid.y nikimini run data get storage niki:nbt Buffer.instantvoid.y
+execute store result score instantvoid.g nikimini run data get storage niki:nbt Buffer.instantvoid.g
+execute store result score instantvoid.a nikimini run data get storage niki:nbt Buffer.instantvoid.a
+execute store result score instantvoid.p nikimini run data get storage niki:nbt Buffer.instantvoid.p
+execute store result score revives.r nikimini run data get storage niki:nbt Buffer.revives.r
+execute store result score revives.b nikimini run data get storage niki:nbt Buffer.revives.b
+execute store result score revives.y nikimini run data get storage niki:nbt Buffer.revives.y
+execute store result score revives.g nikimini run data get storage niki:nbt Buffer.revives.g
+execute store result score revives.a nikimini run data get storage niki:nbt Buffer.revives.a
+execute store result score revives.p nikimini run data get storage niki:nbt Buffer.revives.p
+execute store result score livestextonkill.r nikimini run data get storage niki:nbt Buffer.livestextonkill.r
+execute store result score livestextonkill.b nikimini run data get storage niki:nbt Buffer.livestextonkill.b
+execute store result score livestextonkill.y nikimini run data get storage niki:nbt Buffer.livestextonkill.y
+execute store result score livestextonkill.g nikimini run data get storage niki:nbt Buffer.livestextonkill.g
+execute store result score livestextonkill.a nikimini run data get storage niki:nbt Buffer.livestextonkill.a
+execute store result score livestextonkill.p nikimini run data get storage niki:nbt Buffer.livestextonkill.p
+execute store result score livestextonscore.r nikimini run data get storage niki:nbt Buffer.livestextonscore.r
+execute store result score livestextonscore.b nikimini run data get storage niki:nbt Buffer.livestextonscore.b
+execute store result score livestextonscore.y nikimini run data get storage niki:nbt Buffer.livestextonscore.y
+execute store result score livestextonscore.g nikimini run data get storage niki:nbt Buffer.livestextonscore.g
+execute store result score livestextonscore.a nikimini run data get storage niki:nbt Buffer.livestextonscore.a
+execute store result score livestextonscore.p nikimini run data get storage niki:nbt Buffer.livestextonscore.p
+execute store result score scoreonpos.r nikimini run data get storage niki:nbt Buffer.scoreonpos.r
+execute store result score scoreonpos.b nikimini run data get storage niki:nbt Buffer.scoreonpos.b
+execute store result score scoreonpos.y nikimini run data get storage niki:nbt Buffer.scoreonpos.y
+execute store result score scoreonpos.g nikimini run data get storage niki:nbt Buffer.scoreonpos.g
+execute store result score scoreonpos.a nikimini run data get storage niki:nbt Buffer.scoreonpos.a
+execute store result score scoreonpos.p nikimini run data get storage niki:nbt Buffer.scoreonpos.p
+execute store result score scoreonkill.r nikimini run data get storage niki:nbt Buffer.scoreonkill.r
+execute store result score scoreonkill.b nikimini run data get storage niki:nbt Buffer.scoreonkill.b
+execute store result score scoreonkill.y nikimini run data get storage niki:nbt Buffer.scoreonkill.y
+execute store result score scoreonkill.g nikimini run data get storage niki:nbt Buffer.scoreonkill.g
+execute store result score scoreonkill.a nikimini run data get storage niki:nbt Buffer.scoreonkill.a
+execute store result score scoreonkill.p nikimini run data get storage niki:nbt Buffer.scoreonkill.p
+execute store result score scoreondeath.r nikimini run data get storage niki:nbt Buffer.scoreondeath.r
+execute store result score scoreondeath.b nikimini run data get storage niki:nbt Buffer.scoreondeath.b
+execute store result score scoreondeath.y nikimini run data get storage niki:nbt Buffer.scoreondeath.y
+execute store result score scoreondeath.g nikimini run data get storage niki:nbt Buffer.scoreondeath.g
+execute store result score scoreondeath.a nikimini run data get storage niki:nbt Buffer.scoreondeath.a
+execute store result score scoreondeath.p nikimini run data get storage niki:nbt Buffer.scoreondeath.p
 
 # variables
-execute store result score revives nikimini run data get storage niki:nbt Buffer.revives
-execute store result score scorer nikimini run data get storage niki:nbt Buffer.scorer
-execute store result score scoreb nikimini run data get storage niki:nbt Buffer.scoreb
-execute store result score scorey nikimini run data get storage niki:nbt Buffer.scorey
-execute store result score scoreg nikimini run data get storage niki:nbt Buffer.scoreg
+execute store result score score.r nikimini run data get storage niki:nbt Buffer.score.r
+execute store result score score.b nikimini run data get storage niki:nbt Buffer.score.b
+execute store result score score.y nikimini run data get storage niki:nbt Buffer.score.y
+execute store result score score.g nikimini run data get storage niki:nbt Buffer.score.g
+execute store result score score.a nikimini run data get storage niki:nbt Buffer.score.a
+execute store result score score.p nikimini run data get storage niki:nbt Buffer.score.p
 
 # unimplemented
 execute store result score pauseonscore nikimini run data get storage niki:nbt Buffer.pauseonscore
 execute store result score nikianthem nikimini run data get storage niki:nbt Buffer.nikianthem
 execute store result score nikimusic nikimini run data get storage niki:nbt Buffer.nikimusic
+execute store result score wins.r nikimini run data get storage niki:nbt Buffer.wins.r
+execute store result score wins.b nikimini run data get storage niki:nbt Buffer.wins.b
+execute store result score wins.y nikimini run data get storage niki:nbt Buffer.wins.y
+execute store result score wins.g nikimini run data get storage niki:nbt Buffer.wins.g
+execute store result score wins.a nikimini run data get storage niki:nbt Buffer.wins.a
+execute store result score wins.p nikimini run data get storage niki:nbt Buffer.wins.p
+execute store result score rounds nikimini run data get storage niki:nbt Buffer.rounds
 
-# unused
-execute store result score misccountdown nikimini run data get storage niki:nbt Buffer.misccountdown
-execute store result score minispec nikimini run data get storage niki:nbt Buffer.minispec

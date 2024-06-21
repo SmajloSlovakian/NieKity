@@ -1,8 +1,14 @@
-execute if score targetscore nikimini matches ..-1 as @a[scores={return=2..6}] run function mini:core/game/scoredon
-execute if score targetscore nikimini matches 1.. as @a[scores={return=2..6}] run function mini:core/game/scoredby
+execute if score a nikimath matches 0 run return 0
+execute if score targetscore nikimini matches ..-1 as @a[scores={return=2..}] run function mini:core/game/scoredon
+execute if score targetscore nikimini matches 1.. as @a[scores={return=2..}] run function mini:core/game/scoredby
 
-scoreboard players set @a return 0
-function mini:helper/returnall
+execute if score livestextonscore.r nikimini matches 1 as @s[team=nikir] run function niki:text/zivoty
+execute if score livestextonscore.b nikimini matches 1 as @s[team=nikib] run function niki:text/zivoty
+execute if score livestextonscore.y nikimini matches 1 as @s[team=nikiy] run function niki:text/zivoty
+execute if score livestextonscore.g nikimini matches 1 as @s[team=nikig] run function niki:text/zivoty
+execute if score livestextonscore.a nikimini matches 1 as @s[team=nikia] run function niki:text/zivoty
+execute if score livestextonscore.p nikimini matches 1 as @s[team=nikip] run function niki:text/zivoty
+
 function mini:core/game/utility/updatescoredisplay
 function mini:core/game/utility/checkwin
 

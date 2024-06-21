@@ -49,11 +49,6 @@ data modify storage lobby:signsettings translate merge value {vacuumtype:{}}
     data modify storage lobby:signsettings translate.vacuumtype merge value {"1":{"text":"Všetko","color":"#00FFFF"}}
     data modify storage lobby:signsettings translate.vacuumtype merge value {"2":{"text":"Bedwars","color":"#FF0000"}}
 
-data modify storage lobby:signsettings translate merge value {scoretype:{}}
-    data modify storage lobby:signsettings translate.scoretype merge value {"0":{"text":"Žiadny","color":"#8000FF"}}
-    data modify storage lobby:signsettings translate.scoretype merge value {"1":{"text":"Pozícia","color":"#FF0000"}}
-    data modify storage lobby:signsettings translate.scoretype merge value {"2":{"text":"Zabitie","color":"#FF0000"}}
-
 data modify storage lobby:signsettings translate merge value {gamemode:{}}
     data modify storage lobby:signsettings translate.gamemode merge value {"0":{"text":"Prežitie","color":"#FFFF00"}}
     data modify storage lobby:signsettings translate.gamemode merge value {"1":{"text":"Tvorivý","color":"#0000FF"}}
@@ -61,4 +56,3 @@ data modify storage lobby:signsettings translate merge value {gamemode:{}}
 
 data modify storage lobby:signsettings translate merge value {nikimusic:{}}
     data modify storage lobby:signsettings translate.gamemode merge value {"0":{"text":"Prežitie","color":"#FFFF00"}}
-    

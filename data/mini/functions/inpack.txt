@@ -1,0 +1,58 @@
++# scoreboard to marker data
++data modify storage niki:nbt Buffer set value {}
+-# marker data to scoreboard
+-data modify storage niki:nbt Buffer set from entity @s data
+
+# main
+minitype
+state
+started
+teams
+noplayertimeout
+minplayers
+minteams
+outoforder
+dimtype
+dimension
+
+# timers
+timewitoutplayers
+startcountdown
+timer
+anthem
+
+# non-teamed constants
+map
+vacuumtype
+targetscore
+scoredisplay
+
+# teamed constants
+kit.
+attackspeed.
+gamemode.
+t1chestsondeath.
+
+t2chestsondeath.
+startbarrier.
+kitondeath.
+instantvoid.
+revives.
+livestextonkill.
+livestextonscore.
+scoreonpos.
+scoreonkill.
+scoreondeath.
+
+# variables
+score.
+
+# unimplemented
+pauseonscore
+nikianthem
+nikimusic
+wins.
+rounds
+
+
++data modify entity @s data set from storage niki:nbt Buffer

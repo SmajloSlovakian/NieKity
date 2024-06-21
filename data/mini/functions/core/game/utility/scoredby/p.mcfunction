@@ -1,2 +1,2 @@
-scoreboard players add @s score 1
+scoreboard players operation @s score += a nikimath
 function niki:text/bodoval/hrac

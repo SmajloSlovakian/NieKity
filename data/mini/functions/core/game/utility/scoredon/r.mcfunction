@@ -1,2 +1,2 @@
-scoreboard players remove scorer nikimini 1
+scoreboard players operation score.r nikimini -= a nikimath
 function niki:text/odbodoval/c

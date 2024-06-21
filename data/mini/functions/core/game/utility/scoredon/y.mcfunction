@@ -1,2 +1,2 @@
-scoreboard players remove scorey nikimini 1
+scoreboard players operation score.y nikimini -= a nikimath
 function niki:text/odbodoval/zl

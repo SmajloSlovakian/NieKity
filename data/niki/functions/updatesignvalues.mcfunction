@@ -8,12 +8,14 @@ data modify storage lobby:signsettings setvalues[1] merge value {t2chestsod:{tra
 data modify storage lobby:signsettings setvalues[1] merge value {gamemode:{translateto:"gamemode",drawtype:1,possibilities:[0,1,2],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {instantvoid:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {vacuumtype:{translateto:"vacuumtype",drawtype:1,possibilities:[0,1,2],prevvalue:-1,value:0,nextvalue:1}}
-data modify storage lobby:signsettings setvalues[1] merge value {scoretype:{translateto:"scoretype",drawtype:1,possibilities:[0,1,2],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {targetscore:{translateto:"null",drawtype:2,possibilities:[-5,5,10,20,-20,-10],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {scoredisplay:{translateto:"scoredisplay",drawtype:1,possibilities:[0,1,2],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {minteams:{translateto:"null",drawtype:2,possibilities:[1,2,3,4],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {minplayers:{translateto:"null",drawtype:2,possibilities:[1,2,3,4],prevvalue:-1,value:0,nextvalue:1}}
 
+data modify storage lobby:signsettings setvalues[1] merge value {scoreondeath:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
+data modify storage lobby:signsettings setvalues[1] merge value {scoreonkill:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
+data modify storage lobby:signsettings setvalues[1] merge value {scoreonpos:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {startbarrier:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {pauseonscore:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 

@@ -1,2 +1,2 @@
-scoreboard players add scorer nikimini 1
+scoreboard players operation score.r nikimini += a nikimath
 function niki:text/bodoval/c
