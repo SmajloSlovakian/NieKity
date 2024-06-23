@@ -1,6 +1,6 @@
 function mini:helper/scoretagall
 execute if score timer nikimini matches ..-10000 if entity @a[scores={deathtimep=1..,inthismini=1..}] run return 1
-execute if score timer nikimini matches ..-10000 run function mini:core/game/lateinit
+execute if score timer nikimini matches -10000 run function mini:core/game/lateinit
 execute if score timer nikimini matches -9940 as @e[tag=nikiminipos,sort=nearest,limit=1] store result score timer nikimini run function niki:soundgroup/music
 execute if score timer nikimini matches ..0 run function mini:core/game/utility/timercountdown
 

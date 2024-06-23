@@ -6,8 +6,8 @@ item replace entity @s hotbar.0 with minecraft:diamond_sword
 item replace entity @s hotbar.1 with minecraft:diamond_axe
 item replace entity @s hotbar.2 with minecraft:crossbow
 item replace entity @s hotbar.3 with bow
-item replace entity @s hotbar.4 with cobblestone{CanPlaceOn:[stone,cobblestone,stone_bricks,cracked_stone_bricks,mossy_stone_bricks]} 64
-item replace entity @s hotbar.5 with minecraft:diamond_pickaxe{CanDestroy:[cobblestone]}
+item replace entity @s hotbar.4 with cobblestone 64
+item replace entity @s hotbar.5 with minecraft:diamond_pickaxe
 item replace entity @s hotbar.6 with minecraft:golden_apple 2
 item replace entity @s hotbar.7 with bread 10
 item replace entity @s hotbar.8 with minecraft:totem_of_undying
