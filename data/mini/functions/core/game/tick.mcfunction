@@ -1,6 +1,6 @@
 function mini:helper/scoretagall
-execute if score timer nikimini matches -10000 if entity @a[scores={deathtimep=1..,inthismini=1..}] run return 1
-execute if score timer nikimini matches -10000 run function mini:core/game/lateinit
+execute if score timer nikimini matches ..-10000 if entity @a[scores={deathtimep=1..,inthismini=1..}] run return 1
+execute if score timer nikimini matches ..-10000 run function mini:core/game/lateinit
 execute if score timer nikimini matches -9940 as @e[tag=nikiminipos,sort=nearest,limit=1] store result score timer nikimini run function niki:soundgroup/music
 execute if score timer nikimini matches ..0 run function mini:core/game/utility/timercountdown
 
@@ -17,14 +17,15 @@ execute if score vacuumtype nikimini matches 1 run kill @e[distance=0..,type=ite
 execute if score vacuumtype nikimini matches 2 run kill @e[distance=0..,predicate=bw1:vysavac]
 execute if score dimtype nikimini matches 1 run function niki:border
 
-# note: score elimination doesn't work on aqua and purple
 execute as @a[scores={umrel=1..,inthismini=1..}] run function mini:core/game/death
-execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] run function mini:core/game/utility/deathscore
-execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] run function mini:core/game/utility/killscore
-function mini:core/game/utility/scorepos
-
-
 execute as @a[scores={inthismini=1..,deathtimep=0},tag=tohandledeath] run function mini:core/game/latedeath
+
+
+# note: score elimination doesn't work on aqua and purple
+execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/deathscore
+execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/killscore
+execute if score timer nikimini matches 1.. run function mini:core/game/utility/scorepos
+
 
 execute unless entity @a[scores={inthismini=1..}] run scoreboard players remove timewithoutplayers nikimini 1
 execute if entity @a[scores={inthismini=1..}] run scoreboard players operation timewithoutplayers nikimini = noplayertimeout nikimini
@@ -32,6 +33,8 @@ execute if score timewithoutplayers nikimini matches ..0 run say No player timeo
 execute if score timewithoutplayers nikimini matches ..0 run function mini:core/game/end
 
 execute if score anthem nikimini matches 1.. run scoreboard players remove anthem nikimini 1
-execute if score anthem nikimini matches 1 run function mini:core/game/end
+execute if score anthem nikimini matches 1 if score iscompletewin nikimini matches 1 run function mini:core/game/end
 
 scoreboard players add timer nikimini 1
+
+execute if score anthem nikimini matches 1 if score iscompletewin nikimini matches 0 run function mini:core/game/nextround

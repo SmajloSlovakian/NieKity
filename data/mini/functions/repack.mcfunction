@@ -12,6 +12,7 @@ execute store result storage niki:nbt Buffer.minteams int 1 run scoreboard playe
 execute store result storage niki:nbt Buffer.outoforder int 1 run scoreboard players get outoforder nikimini
 execute store result storage niki:nbt Buffer.dimtype int 1 run scoreboard players get dimtype nikimini
 execute store result storage niki:nbt Buffer.dimension int 1 run scoreboard players get dimension nikimini
+execute store result storage niki:nbt Buffer.iscompletewin int 1 run scoreboard players get iscompletewin nikimini
 
 # timers
 execute store result storage niki:nbt Buffer.timewitoutplayers int 1 run scoreboard players get timewitoutplayers nikimini
@@ -24,6 +25,8 @@ execute store result storage niki:nbt Buffer.map int 1 run scoreboard players ge
 execute store result storage niki:nbt Buffer.vacuumtype int 1 run scoreboard players get vacuumtype nikimini
 execute store result storage niki:nbt Buffer.targetscore int 1 run scoreboard players get targetscore nikimini
 execute store result storage niki:nbt Buffer.scoredisplay int 1 run scoreboard players get scoredisplay nikimini
+#rounds je skôr targetwins
+execute store result storage niki:nbt Buffer.rounds int 1 run scoreboard players get rounds nikimini
 
 # teamed constants
 execute store result storage niki:nbt Buffer.kit.r int 1 run scoreboard players get kit.r nikimini
@@ -119,18 +122,17 @@ execute store result storage niki:nbt Buffer.score.y int 1 run scoreboard player
 execute store result storage niki:nbt Buffer.score.g int 1 run scoreboard players get score.g nikimini
 execute store result storage niki:nbt Buffer.score.a int 1 run scoreboard players get score.a nikimini
 execute store result storage niki:nbt Buffer.score.p int 1 run scoreboard players get score.p nikimini
-
-# unimplemented
-execute store result storage niki:nbt Buffer.pauseonscore int 1 run scoreboard players get pauseonscore nikimini
-execute store result storage niki:nbt Buffer.nikianthem int 1 run scoreboard players get nikianthem nikimini
-execute store result storage niki:nbt Buffer.nikimusic int 1 run scoreboard players get nikimusic nikimini
 execute store result storage niki:nbt Buffer.wins.r int 1 run scoreboard players get wins.r nikimini
 execute store result storage niki:nbt Buffer.wins.b int 1 run scoreboard players get wins.b nikimini
 execute store result storage niki:nbt Buffer.wins.y int 1 run scoreboard players get wins.y nikimini
 execute store result storage niki:nbt Buffer.wins.g int 1 run scoreboard players get wins.g nikimini
 execute store result storage niki:nbt Buffer.wins.a int 1 run scoreboard players get wins.a nikimini
 execute store result storage niki:nbt Buffer.wins.p int 1 run scoreboard players get wins.p nikimini
-execute store result storage niki:nbt Buffer.rounds int 1 run scoreboard players get rounds nikimini
+
+# unimplemented
+execute store result storage niki:nbt Buffer.pauseonscore int 1 run scoreboard players get pauseonscore nikimini
+execute store result storage niki:nbt Buffer.nikianthem int 1 run scoreboard players get nikianthem nikimini
+execute store result storage niki:nbt Buffer.nikimusic int 1 run scoreboard players get nikimusic nikimini
 
 
 data modify entity @s data set from storage niki:nbt Buffer

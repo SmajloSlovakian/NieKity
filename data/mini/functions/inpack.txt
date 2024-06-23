@@ -14,6 +14,7 @@ minteams
 outoforder
 dimtype
 dimension
+iscompletewin
 
 # timers
 timewitoutplayers
@@ -26,6 +27,8 @@ map
 vacuumtype
 targetscore
 scoredisplay
+#rounds je skôr targetwins
+rounds
 
 # teamed constants
 kit.
@@ -46,13 +49,14 @@ scoreondeath.
 
 # variables
 score.
+wins.
 
 # unimplemented
 pauseonscore
 nikianthem
 nikimusic
-wins.
-rounds
 
+# reserved
+#nextrounddata
 
 +data modify entity @s data set from storage niki:nbt Buffer

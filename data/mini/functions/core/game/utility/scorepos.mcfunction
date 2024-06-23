@@ -7,11 +7,10 @@ scoreboard players set @a[team=nikir,scores={return=2}] return 0
 scoreboard players set @a[team=nikib,scores={return=3}] return 0
 scoreboard players set @a[team=nikiy,scores={return=4}] return 0
 scoreboard players set @a[team=nikig,scores={return=5}] return 0
-execute if score score.r nikimini = targetscore nikimini run scoreboard players set @a[scores={return=2}] return 0
-execute if score score.b nikimini = targetscore nikimini run scoreboard players set @a[scores={return=3}] return 0
-execute if score score.y nikimini = targetscore nikimini run scoreboard players set @a[scores={return=4}] return 0
-execute if score score.g nikimini = targetscore nikimini run scoreboard players set @a[scores={return=5}] return 0
-
+execute unless entity @a[scores={inthismini=1..},team=nikir] run scoreboard players set @a[scores={return=2}] return 0
+execute unless entity @a[scores={inthismini=1..},team=nikib] run scoreboard players set @a[scores={return=3}] return 0
+execute unless entity @a[scores={inthismini=1..},team=nikiy] run scoreboard players set @a[scores={return=4}] return 0
+execute unless entity @a[scores={inthismini=1..},team=nikig] run scoreboard players set @a[scores={return=5}] return 0
 
 execute if entity @a[scores={return=2..},team=nikir] run scoreboard players operation a nikimath = scoreonpos.r nikimini
 execute if entity @a[scores={return=2..},team=nikib] run scoreboard players operation a nikimath = scoreonpos.b nikimini

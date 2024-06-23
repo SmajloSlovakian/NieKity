@@ -8,6 +8,7 @@ scoreboard players set @a[scores={inthismini=1..}] miniid 0
 scoreboard players set @a[scores={inthismini=1..}] miniteam 0
 team leave @a[scores={inthismini=1..}]
 execute as @a[scores={inthismini=1..}] run function mini:core/lobbyspec/spawnpoint
+kill @a[scores={inthismini=1..}]
 function niki:killeverything
 kill @s
 

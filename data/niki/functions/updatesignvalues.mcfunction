@@ -19,5 +19,9 @@ data modify storage lobby:signsettings setvalues[1] merge value {scoreonpos:{tra
 data modify storage lobby:signsettings setvalues[1] merge value {startbarrier:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {pauseonscore:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
 
+data modify storage lobby:signsettings setvalues[1] merge value {livestextonkill:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
+data modify storage lobby:signsettings setvalues[1] merge value {livestextonscore:{translateto:"boolean",drawtype:1,possibilities:[0,1],prevvalue:-1,value:0,nextvalue:1}}
+data modify storage lobby:signsettings setvalues[1] merge value {rounds:{translateto:"null",drawtype:2,possibilities:[1,2,3,4,5,6,7,8,9,10],prevvalue:-1,value:0,nextvalue:1}}
+
 data modify storage lobby:signsettings setvalues[1] merge value {nikianthem:{translateto:"boolean",drawtype:1,possibilities:[0,1,2],prevvalue:-1,value:0,nextvalue:1}}
 data modify storage lobby:signsettings setvalues[1] merge value {nikimusic:{translateto:"nikimusic",drawtype:1,possibilities:[-2,-1,0,1],prevvalue:-1,value:0,nextvalue:1}}

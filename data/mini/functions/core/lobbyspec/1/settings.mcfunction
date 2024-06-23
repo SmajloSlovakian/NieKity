@@ -8,6 +8,7 @@ execute store result score scoredisplay nikimini run data get storage lobby:sign
 execute store result score minplayers nikimini run data get storage lobby:signsettings setvalues[1].minplayers.posval
 execute store result score minteams nikimini run data get storage lobby:signsettings setvalues[1].minteams.posval
 execute store result score vacuumtype nikimini run data get storage lobby:signsettings setvalues[1].vacuumtype.posval
+execute store result score rounds nikimini run data get storage lobby:signsettings setvalues[1].rounds.posval
 
 execute store result score kit.r nikimini run data get storage lobby:signsettings setvalues[1].kit.posval
 execute store result score kit.b nikimini run data get storage lobby:signsettings setvalues[1].kit.posval
@@ -75,3 +76,15 @@ execute store result score scoreonpos.y nikimini run data get storage lobby:sign
 execute store result score scoreonpos.g nikimini run data get storage lobby:signsettings setvalues[1].scoreonpos.posval
 execute store result score scoreonpos.a nikimini run data get storage lobby:signsettings setvalues[1].scoreonpos.posval
 execute store result score scoreonpos.p nikimini run data get storage lobby:signsettings setvalues[1].scoreonpos.posval
+execute store result score livestextonkill.r nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonkill.b nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonkill.y nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonkill.g nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonkill.a nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonkill.p nikimini run data get storage lobby:signsettings setvalues[1].livestextonkill.posval
+execute store result score livestextonscore.r nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score livestextonscore.b nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score livestextonscore.y nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score livestextonscore.g nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score livestextonscore.a nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score livestextonscore.p nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval

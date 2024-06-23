@@ -12,6 +12,7 @@ execute store result score minteams nikimini run data get storage niki:nbt Buffe
 execute store result score outoforder nikimini run data get storage niki:nbt Buffer.outoforder
 execute store result score dimtype nikimini run data get storage niki:nbt Buffer.dimtype
 execute store result score dimension nikimini run data get storage niki:nbt Buffer.dimension
+execute store result score iscompletewin nikimini run data get storage niki:nbt Buffer.iscompletewin
 
 # timers
 execute store result score timewitoutplayers nikimini run data get storage niki:nbt Buffer.timewitoutplayers
@@ -24,6 +25,8 @@ execute store result score map nikimini run data get storage niki:nbt Buffer.map
 execute store result score vacuumtype nikimini run data get storage niki:nbt Buffer.vacuumtype
 execute store result score targetscore nikimini run data get storage niki:nbt Buffer.targetscore
 execute store result score scoredisplay nikimini run data get storage niki:nbt Buffer.scoredisplay
+#rounds je skôr targetwins
+execute store result score rounds nikimini run data get storage niki:nbt Buffer.rounds
 
 # teamed constants
 execute store result score kit.r nikimini run data get storage niki:nbt Buffer.kit.r
@@ -119,16 +122,15 @@ execute store result score score.y nikimini run data get storage niki:nbt Buffer
 execute store result score score.g nikimini run data get storage niki:nbt Buffer.score.g
 execute store result score score.a nikimini run data get storage niki:nbt Buffer.score.a
 execute store result score score.p nikimini run data get storage niki:nbt Buffer.score.p
-
-# unimplemented
-execute store result score pauseonscore nikimini run data get storage niki:nbt Buffer.pauseonscore
-execute store result score nikianthem nikimini run data get storage niki:nbt Buffer.nikianthem
-execute store result score nikimusic nikimini run data get storage niki:nbt Buffer.nikimusic
 execute store result score wins.r nikimini run data get storage niki:nbt Buffer.wins.r
 execute store result score wins.b nikimini run data get storage niki:nbt Buffer.wins.b
 execute store result score wins.y nikimini run data get storage niki:nbt Buffer.wins.y
 execute store result score wins.g nikimini run data get storage niki:nbt Buffer.wins.g
 execute store result score wins.a nikimini run data get storage niki:nbt Buffer.wins.a
 execute store result score wins.p nikimini run data get storage niki:nbt Buffer.wins.p
-execute store result score rounds nikimini run data get storage niki:nbt Buffer.rounds
+
+# unimplemented
+execute store result score pauseonscore nikimini run data get storage niki:nbt Buffer.pauseonscore
+execute store result score nikianthem nikimini run data get storage niki:nbt Buffer.nikianthem
+execute store result score nikimusic nikimini run data get storage niki:nbt Buffer.nikimusic
 

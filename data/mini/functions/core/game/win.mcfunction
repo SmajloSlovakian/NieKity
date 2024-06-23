@@ -1,5 +1,16 @@
 execute as @e[tag=nikiminipos,distance=0..] run tag @s add nm_stopmusic
-execute store result score anthem nikimini run function niki:soundgroup/anthem
+scoreboard players set anthem nikimini 60
+
+execute if entity @s[team=nikir] run scoreboard players add wins.r nikimini 1
+execute if entity @s[team=nikib] run scoreboard players add wins.b nikimini 1
+execute if entity @s[team=nikiy] run scoreboard players add wins.y nikimini 1
+execute if entity @s[team=nikig] run scoreboard players add wins.g nikimini 1
+execute if entity @s[team=nikia] run scoreboard players add @s wins 1
+execute if entity @s[team=nikip] run scoreboard players add @s wins 1
+
+
+execute if function mini:helper/iscompletewin store result score anthem nikimini run function niki:soundgroup/anthem
+execute if function mini:helper/iscompletewin run scoreboard players set iscompletewin nikimini 1
 execute if entity @s[team=nikir] run return run function niki:text/vyhra/c
 execute if entity @s[team=nikib] run return run function niki:text/vyhra/m
 execute if entity @s[team=nikiy] run return run function niki:text/vyhra/zl
