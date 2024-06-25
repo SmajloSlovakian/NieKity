@@ -1,11 +1,14 @@
+# Countdown and start
 function mini:helper/scoretagall
 execute if score timer nikimini matches ..-10000 if entity @a[scores={deathtimep=1..,inthismini=1..}] run return 1
 execute if score timer nikimini matches -10000 run function mini:core/game/lateinit
 execute if score timer nikimini matches -9940 as @e[tag=nikiminipos,sort=nearest,limit=1] store result score timer nikimini run function niki:soundgroup/music
 execute if score timer nikimini matches ..0 run function mini:core/game/utility/timercountdown
 
+# Map specific processing
 function mini:core/mapspec/tick
 
+# Instant void
 execute if score instantvoid.r nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikir,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
 execute if score instantvoid.b nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikib,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
 execute if score instantvoid.y nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikiy,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
@@ -20,8 +23,8 @@ execute if score dimtype nikimini matches 1 run function niki:border
 execute as @a[scores={umrel=1..,inthismini=1..}] run function mini:core/game/death
 execute as @a[scores={inthismini=1..,deathtimep=0},tag=tohandledeath] run function mini:core/game/latedeath
 
-
 # note: score elimination doesn't work on aqua and purple
+execute as @a[scores={inthismini=1..},tag=!spect] if items entity @s armor.head minecraft:golden_helmet[minecraft:item_name="Koruna"] if score timer nikimini matches 1.. run function mini:core/game/utility/crownscore
 execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/deathscore
 execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/killscore
 execute if score timer nikimini matches 1.. run function mini:core/game/utility/scorepos

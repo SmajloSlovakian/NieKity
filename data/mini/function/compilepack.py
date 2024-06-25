@@ -9,7 +9,7 @@
 # +abc - line in generated repack file
 # -abc - line in generated unpack file
 
-cesta = "data/mini/functions/"
+cesta = "data/mini/function/"
 unpack = ""
 repack = ""
 

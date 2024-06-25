@@ -9,6 +9,7 @@ execute store result score minplayers nikimini run data get storage lobby:signse
 execute store result score minteams nikimini run data get storage lobby:signsettings setvalues[1].minteams.posval
 execute store result score vacuumtype nikimini run data get storage lobby:signsettings setvalues[1].vacuumtype.posval
 execute store result score rounds nikimini run data get storage lobby:signsettings setvalues[1].rounds.posval
+execute store result score spawncrown nikimini run data get storage lobby:signsettings setvalues[1].spawncrown.posval
 
 execute store result score kit.r nikimini run data get storage lobby:signsettings setvalues[1].kit.posval
 execute store result score kit.b nikimini run data get storage lobby:signsettings setvalues[1].kit.posval
@@ -88,3 +89,21 @@ execute store result score livestextonscore.y nikimini run data get storage lobb
 execute store result score livestextonscore.g nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
 execute store result score livestextonscore.a nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
 execute store result score livestextonscore.p nikimini run data get storage lobby:signsettings setvalues[1].livestextonscore.posval
+execute store result score regeneration.r nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score regeneration.b nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score regeneration.y nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score regeneration.g nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score regeneration.a nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score regeneration.p nikimini run data get storage lobby:signsettings setvalues[1].regeneration.posval
+execute store result score blockreach.r nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score blockreach.b nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score blockreach.y nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score blockreach.g nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score blockreach.a nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score blockreach.p nikimini run data get storage lobby:signsettings setvalues[1].blockreach.posval 10
+execute store result score safefall.r nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10
+execute store result score safefall.b nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10
+execute store result score safefall.y nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10
+execute store result score safefall.g nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10
+execute store result score safefall.a nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10
+execute store result score safefall.p nikimini run data get storage lobby:signsettings setvalues[1].safefall.posval 10

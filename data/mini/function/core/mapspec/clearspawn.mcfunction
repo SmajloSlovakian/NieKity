@@ -14,3 +14,5 @@ execute if score map nikimini matches 8 if function mini:core/mapspec/widesnow/c
 execute if score map nikimini matches 9 if function mini:core/mapspec/tallsnow/clearspawn run return 1
 execute if score map nikimini matches 10 if function mini:core/mapspec/jinjang/clearspawn run return 1
 execute if score map nikimini matches 11 if function mini:core/mapspec/terracube/clearspawn run return 1
+
+execute if score map nikimini matches 11 if function mini:core/mapspec/jorvik/clearspawn run return 1

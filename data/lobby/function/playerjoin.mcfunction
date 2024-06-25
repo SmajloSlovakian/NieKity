@@ -1,8 +1,11 @@
 scoreboard players operation @s gametime = gamétimé gametime
-execute if entity @s[tag=vhre,team=] run trigger lobby
+function niki:cleartag
+tag @s add 1
+execute if entity @s[scores={miniid=1..}] as @e[tag=nikimini] if score @s miniid = @a[tag=1,limit=1] miniid run tag @a[tag=1,limit=1] add 2
+execute as @a[tag=1,limit=1] run trigger lobby
 
-execute if score party lobby matches 1 if entity @a[tag=vhre] run function lobby:generaltppoz
-execute if score party lobby matches 1 unless entity @a[tag=vhre] run tp @r
+#execute if score party lobby matches 1 if entity @a[tag=vhre] run function lobby:generaltppoz
+#execute if score party lobby matches 1 unless entity @a[tag=vhre] run tp @r
 
 tellraw @s {"text": "Pre správne nastavenie hlasitosti niektorých zvukov potrebuješ použiť mód Volume Fix.\n - Zvukové efekty sú pod Hlas/Reč\n - Hudba je pod Zvukové kocky","color": "#FF8000"}
 tellraw s_smile_k {"text": "","color": "red"}

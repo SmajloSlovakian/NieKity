@@ -1,0 +1,36 @@
+{
+    "description": {"text":"Hit detector"},
+    "supported_items": ["minecraft:stick","minecraft:golden_helmet"],
+    "max_level": 1,
+    "slots": ["any"],
+    "anvil_cost": 1,
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 0
+    },
+    "weight": 1,
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "niki:hitdetected"
+                },
+                "affected": "victim",
+                "enchanted": "attacker"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "niki:hitdetected"
+                },
+                "affected": "victim",
+                "enchanted": "victim"
+            }
+        ]
+    }
+}

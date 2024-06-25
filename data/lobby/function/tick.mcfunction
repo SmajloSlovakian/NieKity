@@ -41,15 +41,7 @@ function mini:tickall
 #function sp1:tick
 #function ds1:tick
 
-#automatické vypnutie automatického ukladania keď je nejaká minihra zapnutá pre zabránenie zásekom
-#execute if score forcesave nikimath matches 0 if entity @a[tag=vhre] run save-off
-#execute if score forcesave nikimath matches 0 unless entity @a[tag=vhre] run save-on
-#
-#execute if score forcesave nikimath matches 1 run save-on
-#execute if score forcesave nikimath matches ..-1 run save-off
-#execute if score forcesave nikimath matches -1 run tellraw s_smile_k "Automatické ukladanie je nasilu vypnuté!"
-#execute if score forcesave nikimath matches ..-1 run scoreboard players remove forcesave nikimath 1
-#execute if score forcesave nikimath matches -2400 run scoreboard players set forcesave nikimath -1
+function lobby:ticksection/autosave
 
 #trigger lobby
 execute as @a[scores={lobby=1..}] run function lobby:tp
@@ -84,6 +76,10 @@ execute as @a[scores={umrel2=1..}] run scoreboard players set @s deathtimep 1
 scoreboard players set @a zabil 0
 scoreboard players set @a umrel 0
 scoreboard players set @a umrel2 0
+
+#execute as @a[tag=attacked] run say a
+#execute as @a[tag=attacked] on attacker run say b
+tag @a remove attacked
 
 function lobby:lateexecute
 scoreboard players set gaméskipcheck gametime 1

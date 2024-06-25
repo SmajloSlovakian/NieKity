@@ -2,6 +2,7 @@ function niki:flush
 function mini:core/utility/unloadforce
 function mini:core/game/utility/disablescoredisplay
 function mini:core/utility/unreservedim
+execute as @a[scores={inthismini=1..}] run function niki:resetattributes
 tag @a[scores={inthismini=1..}] remove spect
 gamemode adventure @a[scores={inthismini=1..}]
 scoreboard players set @a[scores={inthismini=1..}] miniid 0

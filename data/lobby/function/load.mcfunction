@@ -11,7 +11,7 @@ execute if score nonload nikimath matches 0 run function lobby:teamadd
 
 #execute if score nonload nikimath matches 0 in niki:1 as @a[distance=0..] run trigger lobby
 execute if score nonload nikimath matches 0 store success score dtactive nikimath run function deltatime:info
-execute if score nonload nikimath matches 0 if score dtactive nikimath matches 0 run scoreboard players set tickstoadd nikimath 1
+execute if score nonload nikimath matches 0 if score dtactive nikimath matches 0 run scoreboard players set tickstoadd deltatime 1
 execute if score nonload nikimath matches 0 if score dtactive nikimath matches 0 run tellraw @a {"text": "Deltatime mód nie je aktívny! Časovania budú nepresné s pomalým serverom!","color": "#FFCB00"}
 
 tellraw @a {"text":"Ahoj Niekity!","color":"yellow"}

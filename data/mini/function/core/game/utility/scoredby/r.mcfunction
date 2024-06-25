@@ -1,2 +1,2 @@
 scoreboard players operation score.r nikimini += a nikimath
-function niki:text/bodoval/c
+execute unless score silentscore nikimath matches 1 run function niki:text/bodoval/c

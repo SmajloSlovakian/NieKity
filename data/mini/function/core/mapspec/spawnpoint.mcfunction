@@ -15,4 +15,6 @@ execute if score map nikimini matches 9 if function mini:core/mapspec/tallsnow/s
 execute if score map nikimini matches 10 if function mini:core/mapspec/jinjang/spawnpoint run return 1
 execute if score map nikimini matches 11 if function mini:core/mapspec/terracube/spawnpoint run return 1
 
+execute if score map nikimini matches 12 if function mini:core/mapspec/jorvik/spawnpoint run return 1
+
 spawnpoint @s ~ ~ ~

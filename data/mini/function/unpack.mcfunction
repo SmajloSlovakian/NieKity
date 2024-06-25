@@ -5,7 +5,6 @@ data modify storage niki:nbt Buffer set from entity @s data
 execute store result score minitype nikimini run data get storage niki:nbt Buffer.minitype
 execute store result score state nikimini run data get storage niki:nbt Buffer.state
 execute store result score started nikimini run data get storage niki:nbt Buffer.started
-execute store result score teams nikimini run data get storage niki:nbt Buffer.teams
 execute store result score noplayertimeout nikimini run data get storage niki:nbt Buffer.noplayertimeout
 execute store result score minplayers nikimini run data get storage niki:nbt Buffer.minplayers
 execute store result score minteams nikimini run data get storage niki:nbt Buffer.minteams
@@ -27,6 +26,7 @@ execute store result score targetscore nikimini run data get storage niki:nbt Bu
 execute store result score scoredisplay nikimini run data get storage niki:nbt Buffer.scoredisplay
 #rounds je skôr targetwins
 execute store result score rounds nikimini run data get storage niki:nbt Buffer.rounds
+execute store result score spawncrown nikimini run data get storage niki:nbt Buffer.spawncrown
 
 # teamed constants
 execute store result score kit.r nikimini run data get storage niki:nbt Buffer.kit.r
@@ -35,25 +35,18 @@ execute store result score kit.y nikimini run data get storage niki:nbt Buffer.k
 execute store result score kit.g nikimini run data get storage niki:nbt Buffer.kit.g
 execute store result score kit.a nikimini run data get storage niki:nbt Buffer.kit.a
 execute store result score kit.p nikimini run data get storage niki:nbt Buffer.kit.p
-execute store result score attackspeed.r nikimini run data get storage niki:nbt Buffer.attackspeed.r
-execute store result score attackspeed.b nikimini run data get storage niki:nbt Buffer.attackspeed.b
-execute store result score attackspeed.y nikimini run data get storage niki:nbt Buffer.attackspeed.y
-execute store result score attackspeed.g nikimini run data get storage niki:nbt Buffer.attackspeed.g
-execute store result score attackspeed.a nikimini run data get storage niki:nbt Buffer.attackspeed.a
-execute store result score attackspeed.p nikimini run data get storage niki:nbt Buffer.attackspeed.p
-execute store result score gamemode.r nikimini run data get storage niki:nbt Buffer.gamemode.r
-execute store result score gamemode.b nikimini run data get storage niki:nbt Buffer.gamemode.b
-execute store result score gamemode.y nikimini run data get storage niki:nbt Buffer.gamemode.y
-execute store result score gamemode.g nikimini run data get storage niki:nbt Buffer.gamemode.g
-execute store result score gamemode.a nikimini run data get storage niki:nbt Buffer.gamemode.a
-execute store result score gamemode.p nikimini run data get storage niki:nbt Buffer.gamemode.p
 execute store result score t1chestsondeath.r nikimini run data get storage niki:nbt Buffer.t1chestsondeath.r
 execute store result score t1chestsondeath.b nikimini run data get storage niki:nbt Buffer.t1chestsondeath.b
 execute store result score t1chestsondeath.y nikimini run data get storage niki:nbt Buffer.t1chestsondeath.y
 execute store result score t1chestsondeath.g nikimini run data get storage niki:nbt Buffer.t1chestsondeath.g
 execute store result score t1chestsondeath.a nikimini run data get storage niki:nbt Buffer.t1chestsondeath.a
 execute store result score t1chestsondeath.p nikimini run data get storage niki:nbt Buffer.t1chestsondeath.p
-
+execute store result score gamemode.r nikimini run data get storage niki:nbt Buffer.gamemode.r
+execute store result score gamemode.b nikimini run data get storage niki:nbt Buffer.gamemode.b
+execute store result score gamemode.y nikimini run data get storage niki:nbt Buffer.gamemode.y
+execute store result score gamemode.g nikimini run data get storage niki:nbt Buffer.gamemode.g
+execute store result score gamemode.a nikimini run data get storage niki:nbt Buffer.gamemode.a
+execute store result score gamemode.p nikimini run data get storage niki:nbt Buffer.gamemode.p
 execute store result score t2chestsondeath.r nikimini run data get storage niki:nbt Buffer.t2chestsondeath.r
 execute store result score t2chestsondeath.b nikimini run data get storage niki:nbt Buffer.t2chestsondeath.b
 execute store result score t2chestsondeath.y nikimini run data get storage niki:nbt Buffer.t2chestsondeath.y
@@ -114,6 +107,37 @@ execute store result score scoreondeath.y nikimini run data get storage niki:nbt
 execute store result score scoreondeath.g nikimini run data get storage niki:nbt Buffer.scoreondeath.g
 execute store result score scoreondeath.a nikimini run data get storage niki:nbt Buffer.scoreondeath.a
 execute store result score scoreondeath.p nikimini run data get storage niki:nbt Buffer.scoreondeath.p
+execute store result score scoreoncrown.r nikimini run data get storage niki:nbt Buffer.scoreoncrown.r
+execute store result score scoreoncrown.b nikimini run data get storage niki:nbt Buffer.scoreoncrown.b
+execute store result score scoreoncrown.y nikimini run data get storage niki:nbt Buffer.scoreoncrown.y
+execute store result score scoreoncrown.g nikimini run data get storage niki:nbt Buffer.scoreoncrown.g
+execute store result score scoreoncrown.a nikimini run data get storage niki:nbt Buffer.scoreoncrown.a
+execute store result score scoreoncrown.p nikimini run data get storage niki:nbt Buffer.scoreoncrown.p
+execute store result score regeneration.r nikimini run data get storage niki:nbt Buffer.regeneration.r
+execute store result score regeneration.b nikimini run data get storage niki:nbt Buffer.regeneration.b
+execute store result score regeneration.y nikimini run data get storage niki:nbt Buffer.regeneration.y
+execute store result score regeneration.g nikimini run data get storage niki:nbt Buffer.regeneration.g
+execute store result score regeneration.a nikimini run data get storage niki:nbt Buffer.regeneration.a
+execute store result score regeneration.p nikimini run data get storage niki:nbt Buffer.regeneration.p
+
+execute store result score attackspeed.r nikimini run data get storage niki:nbt Buffer.attackspeed.r
+execute store result score attackspeed.b nikimini run data get storage niki:nbt Buffer.attackspeed.b
+execute store result score attackspeed.y nikimini run data get storage niki:nbt Buffer.attackspeed.y
+execute store result score attackspeed.g nikimini run data get storage niki:nbt Buffer.attackspeed.g
+execute store result score attackspeed.a nikimini run data get storage niki:nbt Buffer.attackspeed.a
+execute store result score attackspeed.p nikimini run data get storage niki:nbt Buffer.attackspeed.p
+execute store result score blockreach.r nikimini run data get storage niki:nbt Buffer.blockreach.r
+execute store result score blockreach.b nikimini run data get storage niki:nbt Buffer.blockreach.b
+execute store result score blockreach.y nikimini run data get storage niki:nbt Buffer.blockreach.y
+execute store result score blockreach.g nikimini run data get storage niki:nbt Buffer.blockreach.g
+execute store result score blockreach.a nikimini run data get storage niki:nbt Buffer.blockreach.a
+execute store result score blockreach.p nikimini run data get storage niki:nbt Buffer.blockreach.p
+execute store result score safefall.r nikimini run data get storage niki:nbt Buffer.safefall.r
+execute store result score safefall.b nikimini run data get storage niki:nbt Buffer.safefall.b
+execute store result score safefall.y nikimini run data get storage niki:nbt Buffer.safefall.y
+execute store result score safefall.g nikimini run data get storage niki:nbt Buffer.safefall.g
+execute store result score safefall.a nikimini run data get storage niki:nbt Buffer.safefall.a
+execute store result score safefall.p nikimini run data get storage niki:nbt Buffer.safefall.p
 
 # variables
 execute store result score score.r nikimini run data get storage niki:nbt Buffer.score.r
@@ -133,4 +157,8 @@ execute store result score wins.p nikimini run data get storage niki:nbt Buffer.
 execute store result score pauseonscore nikimini run data get storage niki:nbt Buffer.pauseonscore
 execute store result score nikianthem nikimini run data get storage niki:nbt Buffer.nikianthem
 execute store result score nikimusic nikimini run data get storage niki:nbt Buffer.nikimusic
+execute store result score finalintensity nikimini run data get storage niki:nbt Buffer.finalintensity
+execute store result score teamcount nikimini run data get storage niki:nbt Buffer.teamcount
 
+# reserved
+#nextrounddata

@@ -3,6 +3,8 @@ execute store result score @s nikimusic run scoreboard players get predvolený n
 execute if score predvolený nikimusic matches -1 store result score @s nikimusic run random value 0..9
 execute if score predvolený nikimusic matches -2 run return -80
 
+scoreboard players set @s nm_intensity 0
+
 execute if score @s nikimusic matches 0 run return run function niki:music/dance_of_the_blocks/start
 execute if score @s nikimusic matches 1 run return run function niki:music/toys_on_a_tear/start
 execute if score @s nikimusic matches 2 run return run function niki:music/master_builder/start

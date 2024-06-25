@@ -7,7 +7,6 @@
 minitype
 state
 started
-teams
 noplayertimeout
 minplayers
 minteams
@@ -29,13 +28,12 @@ targetscore
 scoredisplay
 #rounds je skôr targetwins
 rounds
+spawncrown
 
 # teamed constants
 kit.
-attackspeed.
-gamemode.
 t1chestsondeath.
-
+gamemode.
 t2chestsondeath.
 startbarrier.
 kitondeath.
@@ -46,6 +44,12 @@ livestextonscore.
 scoreonpos.
 scoreonkill.
 scoreondeath.
+scoreoncrown.
+regeneration.
+
+attackspeed.
+blockreach.
+safefall.
 
 # variables
 score.
@@ -55,6 +59,8 @@ wins.
 pauseonscore
 nikianthem
 nikimusic
+finalintensity
+teamcount
 
 # reserved
 #nextrounddata

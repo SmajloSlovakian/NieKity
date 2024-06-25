@@ -1,2 +1,2 @@
 scoreboard players operation @s score += a nikimath
-function niki:text/bodoval/hrac
+execute unless score silentscore nikimath matches 1 run function niki:text/bodoval/hrac

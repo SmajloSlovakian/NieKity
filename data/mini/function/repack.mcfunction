@@ -5,7 +5,6 @@ data modify storage niki:nbt Buffer set value {}
 execute store result storage niki:nbt Buffer.minitype int 1 run scoreboard players get minitype nikimini
 execute store result storage niki:nbt Buffer.state int 1 run scoreboard players get state nikimini
 execute store result storage niki:nbt Buffer.started int 1 run scoreboard players get started nikimini
-execute store result storage niki:nbt Buffer.teams int 1 run scoreboard players get teams nikimini
 execute store result storage niki:nbt Buffer.noplayertimeout int 1 run scoreboard players get noplayertimeout nikimini
 execute store result storage niki:nbt Buffer.minplayers int 1 run scoreboard players get minplayers nikimini
 execute store result storage niki:nbt Buffer.minteams int 1 run scoreboard players get minteams nikimini
@@ -27,6 +26,7 @@ execute store result storage niki:nbt Buffer.targetscore int 1 run scoreboard pl
 execute store result storage niki:nbt Buffer.scoredisplay int 1 run scoreboard players get scoredisplay nikimini
 #rounds je skôr targetwins
 execute store result storage niki:nbt Buffer.rounds int 1 run scoreboard players get rounds nikimini
+execute store result storage niki:nbt Buffer.spawncrown int 1 run scoreboard players get spawncrown nikimini
 
 # teamed constants
 execute store result storage niki:nbt Buffer.kit.r int 1 run scoreboard players get kit.r nikimini
@@ -35,25 +35,18 @@ execute store result storage niki:nbt Buffer.kit.y int 1 run scoreboard players 
 execute store result storage niki:nbt Buffer.kit.g int 1 run scoreboard players get kit.g nikimini
 execute store result storage niki:nbt Buffer.kit.a int 1 run scoreboard players get kit.a nikimini
 execute store result storage niki:nbt Buffer.kit.p int 1 run scoreboard players get kit.p nikimini
-execute store result storage niki:nbt Buffer.attackspeed.r int 1 run scoreboard players get attackspeed.r nikimini
-execute store result storage niki:nbt Buffer.attackspeed.b int 1 run scoreboard players get attackspeed.b nikimini
-execute store result storage niki:nbt Buffer.attackspeed.y int 1 run scoreboard players get attackspeed.y nikimini
-execute store result storage niki:nbt Buffer.attackspeed.g int 1 run scoreboard players get attackspeed.g nikimini
-execute store result storage niki:nbt Buffer.attackspeed.a int 1 run scoreboard players get attackspeed.a nikimini
-execute store result storage niki:nbt Buffer.attackspeed.p int 1 run scoreboard players get attackspeed.p nikimini
-execute store result storage niki:nbt Buffer.gamemode.r int 1 run scoreboard players get gamemode.r nikimini
-execute store result storage niki:nbt Buffer.gamemode.b int 1 run scoreboard players get gamemode.b nikimini
-execute store result storage niki:nbt Buffer.gamemode.y int 1 run scoreboard players get gamemode.y nikimini
-execute store result storage niki:nbt Buffer.gamemode.g int 1 run scoreboard players get gamemode.g nikimini
-execute store result storage niki:nbt Buffer.gamemode.a int 1 run scoreboard players get gamemode.a nikimini
-execute store result storage niki:nbt Buffer.gamemode.p int 1 run scoreboard players get gamemode.p nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.r int 1 run scoreboard players get t1chestsondeath.r nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.b int 1 run scoreboard players get t1chestsondeath.b nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.y int 1 run scoreboard players get t1chestsondeath.y nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.g int 1 run scoreboard players get t1chestsondeath.g nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.a int 1 run scoreboard players get t1chestsondeath.a nikimini
 execute store result storage niki:nbt Buffer.t1chestsondeath.p int 1 run scoreboard players get t1chestsondeath.p nikimini
-
+execute store result storage niki:nbt Buffer.gamemode.r int 1 run scoreboard players get gamemode.r nikimini
+execute store result storage niki:nbt Buffer.gamemode.b int 1 run scoreboard players get gamemode.b nikimini
+execute store result storage niki:nbt Buffer.gamemode.y int 1 run scoreboard players get gamemode.y nikimini
+execute store result storage niki:nbt Buffer.gamemode.g int 1 run scoreboard players get gamemode.g nikimini
+execute store result storage niki:nbt Buffer.gamemode.a int 1 run scoreboard players get gamemode.a nikimini
+execute store result storage niki:nbt Buffer.gamemode.p int 1 run scoreboard players get gamemode.p nikimini
 execute store result storage niki:nbt Buffer.t2chestsondeath.r int 1 run scoreboard players get t2chestsondeath.r nikimini
 execute store result storage niki:nbt Buffer.t2chestsondeath.b int 1 run scoreboard players get t2chestsondeath.b nikimini
 execute store result storage niki:nbt Buffer.t2chestsondeath.y int 1 run scoreboard players get t2chestsondeath.y nikimini
@@ -114,6 +107,37 @@ execute store result storage niki:nbt Buffer.scoreondeath.y int 1 run scoreboard
 execute store result storage niki:nbt Buffer.scoreondeath.g int 1 run scoreboard players get scoreondeath.g nikimini
 execute store result storage niki:nbt Buffer.scoreondeath.a int 1 run scoreboard players get scoreondeath.a nikimini
 execute store result storage niki:nbt Buffer.scoreondeath.p int 1 run scoreboard players get scoreondeath.p nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.r int 1 run scoreboard players get scoreoncrown.r nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.b int 1 run scoreboard players get scoreoncrown.b nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.y int 1 run scoreboard players get scoreoncrown.y nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.g int 1 run scoreboard players get scoreoncrown.g nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.a int 1 run scoreboard players get scoreoncrown.a nikimini
+execute store result storage niki:nbt Buffer.scoreoncrown.p int 1 run scoreboard players get scoreoncrown.p nikimini
+execute store result storage niki:nbt Buffer.regeneration.r int 1 run scoreboard players get regeneration.r nikimini
+execute store result storage niki:nbt Buffer.regeneration.b int 1 run scoreboard players get regeneration.b nikimini
+execute store result storage niki:nbt Buffer.regeneration.y int 1 run scoreboard players get regeneration.y nikimini
+execute store result storage niki:nbt Buffer.regeneration.g int 1 run scoreboard players get regeneration.g nikimini
+execute store result storage niki:nbt Buffer.regeneration.a int 1 run scoreboard players get regeneration.a nikimini
+execute store result storage niki:nbt Buffer.regeneration.p int 1 run scoreboard players get regeneration.p nikimini
+
+execute store result storage niki:nbt Buffer.attackspeed.r int 1 run scoreboard players get attackspeed.r nikimini
+execute store result storage niki:nbt Buffer.attackspeed.b int 1 run scoreboard players get attackspeed.b nikimini
+execute store result storage niki:nbt Buffer.attackspeed.y int 1 run scoreboard players get attackspeed.y nikimini
+execute store result storage niki:nbt Buffer.attackspeed.g int 1 run scoreboard players get attackspeed.g nikimini
+execute store result storage niki:nbt Buffer.attackspeed.a int 1 run scoreboard players get attackspeed.a nikimini
+execute store result storage niki:nbt Buffer.attackspeed.p int 1 run scoreboard players get attackspeed.p nikimini
+execute store result storage niki:nbt Buffer.blockreach.r int 1 run scoreboard players get blockreach.r nikimini
+execute store result storage niki:nbt Buffer.blockreach.b int 1 run scoreboard players get blockreach.b nikimini
+execute store result storage niki:nbt Buffer.blockreach.y int 1 run scoreboard players get blockreach.y nikimini
+execute store result storage niki:nbt Buffer.blockreach.g int 1 run scoreboard players get blockreach.g nikimini
+execute store result storage niki:nbt Buffer.blockreach.a int 1 run scoreboard players get blockreach.a nikimini
+execute store result storage niki:nbt Buffer.blockreach.p int 1 run scoreboard players get blockreach.p nikimini
+execute store result storage niki:nbt Buffer.safefall.r int 1 run scoreboard players get safefall.r nikimini
+execute store result storage niki:nbt Buffer.safefall.b int 1 run scoreboard players get safefall.b nikimini
+execute store result storage niki:nbt Buffer.safefall.y int 1 run scoreboard players get safefall.y nikimini
+execute store result storage niki:nbt Buffer.safefall.g int 1 run scoreboard players get safefall.g nikimini
+execute store result storage niki:nbt Buffer.safefall.a int 1 run scoreboard players get safefall.a nikimini
+execute store result storage niki:nbt Buffer.safefall.p int 1 run scoreboard players get safefall.p nikimini
 
 # variables
 execute store result storage niki:nbt Buffer.score.r int 1 run scoreboard players get score.r nikimini
@@ -133,6 +157,10 @@ execute store result storage niki:nbt Buffer.wins.p int 1 run scoreboard players
 execute store result storage niki:nbt Buffer.pauseonscore int 1 run scoreboard players get pauseonscore nikimini
 execute store result storage niki:nbt Buffer.nikianthem int 1 run scoreboard players get nikianthem nikimini
 execute store result storage niki:nbt Buffer.nikimusic int 1 run scoreboard players get nikimusic nikimini
+execute store result storage niki:nbt Buffer.finalintensity int 1 run scoreboard players get finalintensity nikimini
+execute store result storage niki:nbt Buffer.teamcount int 1 run scoreboard players get teamcount nikimini
 
+# reserved
+#nextrounddata
 
 data modify entity @s data set from storage niki:nbt Buffer
