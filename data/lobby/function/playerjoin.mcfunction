@@ -2,7 +2,7 @@ scoreboard players operation @s gametime = gamétimé gametime
 function niki:cleartag
 tag @s add 1
 execute if entity @s[scores={miniid=1..}] as @e[tag=nikimini] if score @s miniid = @a[tag=1,limit=1] miniid run tag @a[tag=1,limit=1] add 2
-execute as @a[tag=1,limit=1] run trigger lobby
+execute as @a[tag=2,limit=1] run trigger lobby
 
 #execute if score party lobby matches 1 if entity @a[tag=vhre] run function lobby:generaltppoz
 #execute if score party lobby matches 1 unless entity @a[tag=vhre] run tp @r

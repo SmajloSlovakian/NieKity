@@ -119,6 +119,12 @@ execute store result storage niki:nbt Buffer.regeneration.y int 1 run scoreboard
 execute store result storage niki:nbt Buffer.regeneration.g int 1 run scoreboard players get regeneration.g nikimini
 execute store result storage niki:nbt Buffer.regeneration.a int 1 run scoreboard players get regeneration.a nikimini
 execute store result storage niki:nbt Buffer.regeneration.p int 1 run scoreboard players get regeneration.p nikimini
+execute store result storage niki:nbt Buffer.teamactive.r int 1 run scoreboard players get teamactive.r nikimini
+execute store result storage niki:nbt Buffer.teamactive.b int 1 run scoreboard players get teamactive.b nikimini
+execute store result storage niki:nbt Buffer.teamactive.y int 1 run scoreboard players get teamactive.y nikimini
+execute store result storage niki:nbt Buffer.teamactive.g int 1 run scoreboard players get teamactive.g nikimini
+execute store result storage niki:nbt Buffer.teamactive.a int 1 run scoreboard players get teamactive.a nikimini
+execute store result storage niki:nbt Buffer.teamactive.p int 1 run scoreboard players get teamactive.p nikimini
 
 execute store result storage niki:nbt Buffer.attackspeed.r int 1 run scoreboard players get attackspeed.r nikimini
 execute store result storage niki:nbt Buffer.attackspeed.b int 1 run scoreboard players get attackspeed.b nikimini

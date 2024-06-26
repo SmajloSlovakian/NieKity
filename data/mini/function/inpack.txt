@@ -46,6 +46,7 @@ scoreonkill.
 scoreondeath.
 scoreoncrown.
 regeneration.
+teamactive.
 
 attackspeed.
 blockreach.

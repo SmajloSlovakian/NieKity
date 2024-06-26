@@ -119,6 +119,12 @@ execute store result score regeneration.y nikimini run data get storage niki:nbt
 execute store result score regeneration.g nikimini run data get storage niki:nbt Buffer.regeneration.g
 execute store result score regeneration.a nikimini run data get storage niki:nbt Buffer.regeneration.a
 execute store result score regeneration.p nikimini run data get storage niki:nbt Buffer.regeneration.p
+execute store result score teamactive.r nikimini run data get storage niki:nbt Buffer.teamactive.r
+execute store result score teamactive.b nikimini run data get storage niki:nbt Buffer.teamactive.b
+execute store result score teamactive.y nikimini run data get storage niki:nbt Buffer.teamactive.y
+execute store result score teamactive.g nikimini run data get storage niki:nbt Buffer.teamactive.g
+execute store result score teamactive.a nikimini run data get storage niki:nbt Buffer.teamactive.a
+execute store result score teamactive.p nikimini run data get storage niki:nbt Buffer.teamactive.p
 
 execute store result score attackspeed.r nikimini run data get storage niki:nbt Buffer.attackspeed.r
 execute store result score attackspeed.b nikimini run data get storage niki:nbt Buffer.attackspeed.b

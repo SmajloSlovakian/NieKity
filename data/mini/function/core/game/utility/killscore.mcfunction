@@ -9,4 +9,10 @@ execute if entity @a[scores={return=2..},team=nikiy] run scoreboard players oper
 execute if entity @a[scores={return=2..},team=nikig] run scoreboard players operation a nikimath = scoreonkill.g nikimini
 execute if entity @a[scores={return=2..},team=nikia] run scoreboard players operation a nikimath = scoreonkill.a nikimini
 execute if entity @a[scores={return=2..},team=nikip] run scoreboard players operation a nikimath = scoreonkill.p nikimini
+
+execute if score targetscore nikimini matches ..-1 if entity @s[team=nikia] run scoreboard players set @a return 0
+execute if score targetscore nikimini matches ..-1 if entity @s[team=nikip] run scoreboard players set @a return 0
+execute if score targetscore nikimini matches ..-1 if entity @s[team=nikia] run scoreboard players set @s return 1
+execute if score targetscore nikimini matches ..-1 if entity @s[team=nikip] run scoreboard players set @s return 1
+
 execute if entity @a[scores={return=2..}] run function mini:core/game/utility/scorehandler
