@@ -1,3 +1,6 @@
+#,prevvalue:-1,value:0,nextvalue:1
+
+execute unless data storage niki:nbt Buffer.prevvalue run data merge storage niki:nbt {Buffer:{prevvalue:-1,value:0,nextvalue:1}}
 
 execute store result score a nikimath run data get storage niki:nbt Buffer.value
 execute store result score b nikimath run data get storage niki:nbt Buffer.possibilities

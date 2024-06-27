@@ -40,7 +40,7 @@ data modify storage lobby:signsettings translate merge value {inf:{}}
 data modify storage lobby:signsettings translate merge value {boolean:{}}
     data modify storage lobby:signsettings translate.boolean merge value {"0":{"text":"Nie","color":"#FF0000"}}
     data modify storage lobby:signsettings translate.boolean merge value {"1":{"text":"Áno","color":"#00FF00"}}
-    #data modify storage lobby:signsettings translate.boolean merge value {"2":{"text":"Rýchle","color":"#0000FF"}}
+    data modify storage lobby:signsettings translate.boolean merge value {"-1":{"text":"Rýchle","color":"#0000FF"}}
 
 data modify storage lobby:signsettings translate merge value {scoredisplay:{}}
     data modify storage lobby:signsettings translate.scoredisplay merge value {"0":{"text":"Žiadny","color":"#FF00FF"}}

@@ -1,1 +1,1 @@
-$tellraw @a {"nbt":"$(path)","entity": "@s"}
+$tellraw @a {"nbt":"$(path)","$(type)": "$(value)"}
