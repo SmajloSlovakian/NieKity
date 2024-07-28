@@ -16,3 +16,6 @@ execute if score map nikimini matches 10 run place template sp1:3 -7 0 -8
 execute if score map nikimini matches 11 run place template sp1:4 -4 0 -5
 
 execute if score map nikimini matches 12 run function mini:core/mapspec/jorvik/struct
+
+execute if score map nikimini matches 13 run function mini:core/mapspec/trening/basestruct
+execute if score map nikimini matches 14 run function mini:core/mapspec/trening/basestruct

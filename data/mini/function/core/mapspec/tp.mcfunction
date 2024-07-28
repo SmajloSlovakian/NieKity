@@ -17,4 +17,7 @@ execute if score map nikimini matches 11 if function mini:core/mapspec/terracube
 
 execute if score map nikimini matches 12 if function mini:core/mapspec/jorvik/tp run return 1
 
+execute if score map nikimini matches 13 if function mini:core/mapspec/trening/tp run return 1
+execute if score map nikimini matches 14 if function mini:core/mapspec/trening/tp run return 1
+
 tp ~ ~ ~

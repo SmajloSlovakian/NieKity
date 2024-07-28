@@ -8,7 +8,6 @@ data modify storage niki:nbt Buffer.cmd2 set from block ~ ~ ~ back_text.messages
 data merge storage niki:nbt {Buffer:{cmd1:"data modify storage niki:nbt Buffer.value set value ",cmd3:""}}
 function niki:macroexecute3 with storage niki:nbt Buffer
 
-scoreboard players set c nikimath 1
-execute if entity @s[predicate=niki:iscrouching] run scoreboard players remove c nikimath 2
+scoreboard players set c nikimath 0
 
 function niki:help/signsettingclick2 with storage niki:nbt Buffer

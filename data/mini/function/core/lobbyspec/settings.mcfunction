@@ -52,3 +52,8 @@ scoreboard players set safefall.p nikimini 30
 
 
 execute if score minitype nikimini matches 1 run function mini:core/lobbyspec/1/settings
+
+execute if score minplayers nikimini matches ..0 run function niki:error/invalidvalue
+execute if score minteams nikimini matches ..0 run function niki:error/invalidvalue
+execute if score minplayers nikimini matches ..0 run scoreboard players set minplayers nikimini 1
+execute if score minteams nikimini matches ..0 run scoreboard players set minplayers nikimini 1

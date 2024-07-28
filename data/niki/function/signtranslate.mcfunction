@@ -8,6 +8,7 @@ data modify storage lobby:signsettings translate merge value {kit:{}}
     data modify storage lobby:signsettings translate.kit merge value {"3":{"text":"Luk","color":"#CCCCCC"}}
     data modify storage lobby:signsettings translate.kit merge value {"4":{"text":"Kryštál","color":"#000000"}}
     data modify storage lobby:signsettings translate.kit merge value {"5":[{"text":"The","color":"#0000FF"},{"text":"|","color":"#FFFFFF"},{"text":"Bridge","color":"#FF0000"}]}
+    data modify storage lobby:signsettings translate.kit merge value {"8":[{"text":"TNT","color":"#0000FF"},{"text":"|","color":"#FFFFFF"},{"text":"Bridge","color":"#FF0000"}]}
     data modify storage lobby:signsettings translate.kit merge value {"6":{"text":"Podkopávač","color":"#FFFFFF"}}
     data modify storage lobby:signsettings translate.kit merge value {"7":{"text":"Chytač","color":"#FF00FF"}}
 
@@ -25,6 +26,7 @@ data modify storage lobby:signsettings translate merge value {map:{}}
     data modify storage lobby:signsettings translate.map merge value {"10":[{"text":"Jin","color":"#FFFFFF"},{"text":"-","color":"#808080"},{"text":"Jang","color":"#000000"}]}
     data modify storage lobby:signsettings translate.map merge value {"11":{"text":"Terra-Cube","color":"#C0C0C0"}}
     data modify storage lobby:signsettings translate.map merge value {"12":{"text":"Jorvik","color":"#000000"}}
+    data modify storage lobby:signsettings translate.map merge value {"13":{"text":"Tréning","color":"#123456"}}
 
 data modify storage lobby:signsettings translate merge value {attackspeed:{}}
     data modify storage lobby:signsettings translate.attackspeed merge value {".8":{"text":"Drev. Sekera","color":"gold"}}

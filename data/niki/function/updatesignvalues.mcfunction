@@ -1,8 +1,10 @@
 function niki:signtranslate
-#,overwrite:{"3":'{"text":"ABCDFEF","color":"#FFFFFF"}'}
 
-data modify storage lobby:signsettings setvalues[1] merge value {kit:{translateto:"kit",drawtype:1,possibilities:[0,1,2,3,4,5,6,7],title:"Kit",lobby:"1",key:"kit"}}
-data modify storage lobby:signsettings setvalues[1] merge value {map:{translateto:"map",drawtype:1,possibilities:[0,1,2,3,4,5,6,7,8,9,10,11,12],title:"Mapa",lobby:"1",key:"map"}}
+data modify storage lobby:signsettings setvalues[0] merge value {tutorkit:{translateto:"kit",drawtype:1,possibilities:[0,1,2,3,4,5,8,6,7],dimstance:1,title:"Zmeniť kit",lobby:"0",key:"tutorkit",cmd:"function mini:interface/signchangekit"}}
+data modify storage lobby:signsettings setvalues[0] merge value {tutormap:{translateto:"map",drawtype:1,possibilities:[13,14],dimstance:1,title:"Zmeniť mapu",lobby:"0",key:"tutormap",cmd:"function mini:interface/signchangemap"}}
+
+data modify storage lobby:signsettings setvalues[1] merge value {kit:{translateto:"kit",drawtype:1,possibilities:[0,1,2,3,4,5,8,6,7],title:"Kit",lobby:"1",key:"kit"}}
+data modify storage lobby:signsettings setvalues[1] merge value {map:{translateto:"map",drawtype:1,possibilities:[0,1,2,3,4,5,6,7,8,9,10,11,12,13],title:"Mapa",lobby:"1",key:"map"}}
 data modify storage lobby:signsettings setvalues[1] merge value {revives:{translateto:"inf",drawtype:2,possibilities:[0,1,2,3,4,5,10,15,20,-1],title:"Oživenia",lobby:"1",key:"revives"}}
 data modify storage lobby:signsettings setvalues[1] merge value {t1chestsod:{translateto:"null",drawtype:2,possibilities:[0,1,2,3,4],title:"SmrťT1truhlica",lobby:"1",key:"t1chestsod"}}
 data modify storage lobby:signsettings setvalues[1] merge value {t2chestsod:{translateto:"null",drawtype:2,possibilities:[0,1,2,3,4],title:"SmrťT2truhlica",lobby:"1",key:"t2chestsod"}}

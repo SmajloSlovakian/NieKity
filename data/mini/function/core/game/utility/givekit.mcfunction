@@ -12,3 +12,4 @@ execute if score a nikimath matches 4 run function mini:core/kits/krystal
 execute if score a nikimath matches 5 run function mini:core/kits/thebridge
 execute if score a nikimath matches 6 run function mini:core/kits/spleef
 execute if score a nikimath matches 7 run function mini:core/kits/hit_detector
+execute if score a nikimath matches 8 run function mini:core/kits/tntbridge
