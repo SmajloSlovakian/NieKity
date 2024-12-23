@@ -8,9 +8,9 @@ execute unless entity @e[tag=1] run return run function niki:error/mininotfound
 function niki:savebuffer {key:signchange}
 execute as @e[tag=1] run function mini:unpack
 
-execute unless entity @n[tag=signdimstance,distance=0..,type=marker] run return run function niki:error/dimstancenotfound
 execute store result score map nikimini run data get storage niki:nbt SavedBuffer.signchange.posval
 scoreboard players operation a nikimath = map nikimini
+function niki:debug/tellmath
 function niki:flush
 function mini:core/mapspec/structure
 

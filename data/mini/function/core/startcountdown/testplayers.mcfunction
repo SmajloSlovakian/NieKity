@@ -1,6 +1,7 @@
 #tellraw @a ["testing players at: ",{"score":{"name": "@s","objective": "miniid"}}]
 scoreboard players set @a return 0
 function mini:core/lobbyspec/returnpos
+function niki:cleartag
 tag @s add 0
 execute as @a[scores={return=0}] run function mini:init/disconnectplayer
 execute as @a[scores={return=1..6}] run function mini:init/connectplayer

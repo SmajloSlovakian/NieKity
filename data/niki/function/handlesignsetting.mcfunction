@@ -23,4 +23,3 @@ execute store result storage niki:nbt Buffer.nextvalue int 1 run scoreboard play
 
 function niki:drawsignsetting with storage niki:nbt Buffer
 
-execute unless score c nikimath matches 0 if data storage niki:nbt Buffer.cmd run function niki:macroexecute with storage niki:nbt Buffer

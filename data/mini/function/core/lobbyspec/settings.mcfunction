@@ -6,6 +6,7 @@ scoreboard players set minteams nikimini 2
 scoreboard players set dimtype nikimini 1
 scoreboard players set noplayertimeout nikimini 1200
 scoreboard players set finalintensity nikimini 80
+scoreboard players set rounds nikimini 1
 
 scoreboard players set startbarrier.r nikimini 1
 scoreboard players set startbarrier.b nikimini 1
@@ -49,11 +50,31 @@ scoreboard players set safefall.y nikimini 30
 scoreboard players set safefall.g nikimini 30
 scoreboard players set safefall.a nikimini 30
 scoreboard players set safefall.p nikimini 30
+scoreboard players set deathstring.r nikimini 1
+scoreboard players set deathstring.b nikimini 1
+scoreboard players set deathstring.y nikimini 1
+scoreboard players set deathstring.g nikimini 1
+scoreboard players set deathstring.a nikimini 1
+scoreboard players set deathstring.p nikimini 1
+scoreboard players set gamemode.r nikimini 2
+scoreboard players set gamemode.b nikimini 2
+scoreboard players set gamemode.y nikimini 2
+scoreboard players set gamemode.g nikimini 2
+scoreboard players set gamemode.a nikimini 2
+scoreboard players set gamemode.p nikimini 2
 
 
 execute if score minitype nikimini matches 1 run function mini:core/lobbyspec/1/settings
+execute if score minitype nikimini matches 2 run function mini:core/lobbyspec/tb1/settings
+
+
+
+
+
+
+# Invalid critical value check
 
 execute if score minplayers nikimini matches ..0 run function niki:error/invalidvalue
 execute if score minteams nikimini matches ..0 run function niki:error/invalidvalue
 execute if score minplayers nikimini matches ..0 run scoreboard players set minplayers nikimini 1
-execute if score minteams nikimini matches ..0 run scoreboard players set minplayers nikimini 1
+execute if score minteams nikimini matches ..0 run scoreboard players set minteams nikimini 1

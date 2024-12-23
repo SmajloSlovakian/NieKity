@@ -37,3 +37,8 @@ data modify storage lobby:signsettings setvalues[1] merge value {regeneration:{t
 
 data modify storage lobby:signsettings setvalues[1] merge value {nikianthem:{translateto:"boolean",drawtype:1,possibilities:[0,1,2],title:"Hymna",lobby:"1",key:"nikianthem"}}
 data modify storage lobby:signsettings setvalues[1] merge value {nikimusic:{translateto:"nikimusic",drawtype:1,possibilities:[-2,-1,0,1],title:"Hudba",lobby:"1",key:"nikimusic"}}
+
+
+data modify storage lobby:signsettings setvalues[2] merge value {targetscore:{translateto:"null",drawtype:2,possibilities:[1,5,10,15,20,30],title:"Výherné skóre",lobby:"2",key:"targetscore"}}
+data modify storage lobby:signsettings setvalues[2] merge value {pauseonscore:{translateto:"boolean",drawtype:1,possibilities:[0,1],title:"Pauza pri skóre",lobby:"2",key:"pauseonscore"}}
+data modify storage lobby:signsettings setvalues[2] merge value {scoretype:{translateto:"scoretype",drawtype:1,possibilities:[-1,1],title:"Typ výhry",lobby:"2",key:"scoretype"}}

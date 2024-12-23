@@ -21,3 +21,4 @@ execute at @e[tag=bordermarker-x] run setblock -52 ~1 ~ barrier
 execute at @e[tag=bordermarkerz] run setblock ~ ~1 52 barrier
 execute at @e[tag=bordermarker-z] run setblock ~ ~1 -52 barrier
 execute at @e[tag=bordermarkery] run setblock ~ 82 ~ barrier
+

@@ -3,3 +3,9 @@ scoreboard objectives add nikimini dummy
 scoreboard objectives add lobby dummy
 scoreboard objectives add miniid dummy
 scoreboard objectives add miniteam dummy
+scoreboard objectives add umrel dummy
+scoreboard objectives add umrel2 dummy
+scoreboard objectives add inthismini dummy
+scoreboard objectives add deathtime dummy
+scoreboard objectives add deathtimep dummy
+scoreboard objectives add return dummy

@@ -21,3 +21,5 @@ execute store result score a nikimath run data get storage niki:nbt Buffer.dimst
 execute if score a nikimath matches 1 run function niki:help/signdimstance2 with storage niki:nbt Buffer
 
 $execute if score a nikimath matches 0 run data modify storage lobby:signsettings setvalues[$(lobby)].$(value) set from storage niki:nbt Buffer
+
+execute unless score c nikimath matches 0 if data storage niki:nbt Buffer.cmd run function niki:macroexecute with storage niki:nbt Buffer

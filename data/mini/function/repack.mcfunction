@@ -125,6 +125,12 @@ execute store result storage niki:nbt Buffer.teamactive.y int 1 run scoreboard p
 execute store result storage niki:nbt Buffer.teamactive.g int 1 run scoreboard players get teamactive.g nikimini
 execute store result storage niki:nbt Buffer.teamactive.a int 1 run scoreboard players get teamactive.a nikimini
 execute store result storage niki:nbt Buffer.teamactive.p int 1 run scoreboard players get teamactive.p nikimini
+execute store result storage niki:nbt Buffer.deathstring.r int 1 run scoreboard players get deathstring.r nikimini
+execute store result storage niki:nbt Buffer.deathstring.b int 1 run scoreboard players get deathstring.b nikimini
+execute store result storage niki:nbt Buffer.deathstring.y int 1 run scoreboard players get deathstring.y nikimini
+execute store result storage niki:nbt Buffer.deathstring.g int 1 run scoreboard players get deathstring.g nikimini
+execute store result storage niki:nbt Buffer.deathstring.a int 1 run scoreboard players get deathstring.a nikimini
+execute store result storage niki:nbt Buffer.deathstring.p int 1 run scoreboard players get deathstring.p nikimini
 
 execute store result storage niki:nbt Buffer.attackspeed.r int 1 run scoreboard players get attackspeed.r nikimini
 execute store result storage niki:nbt Buffer.attackspeed.b int 1 run scoreboard players get attackspeed.b nikimini

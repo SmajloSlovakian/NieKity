@@ -16,6 +16,15 @@ execute if score instantvoid.g nikimini matches 1 as @a[scores={inthismini=1..,d
 execute if score instantvoid.a nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikia,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
 execute if score instantvoid.p nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikip,tag=!spect,x=-100,y=-10,z=-100,dx=200,dy=-100,dz=200] run function lobby:latekill/void
 
+# Tripwire deathplane
+execute if score deathstring.r nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikir,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+execute if score deathstring.b nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikib,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+execute if score deathstring.y nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikiy,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+execute if score deathstring.g nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikig,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+execute if score deathstring.a nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikia,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+execute if score deathstring.p nikimini matches 1 as @a[scores={inthismini=1..,deathtimep=0},team=nikip,tag=!spect] at @s if block ~ ~ ~ tripwire run function lobby:latekill/void
+
+
 execute if score vacuumtype nikimini matches 1 run kill @e[distance=0..,type=item]
 execute if score vacuumtype nikimini matches 2 run kill @e[distance=0..,predicate=bw1:vysavac]
 execute if score dimtype nikimini matches 1 run function niki:border

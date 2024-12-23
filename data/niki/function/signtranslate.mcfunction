@@ -59,4 +59,8 @@ data modify storage lobby:signsettings translate merge value {gamemode:{}}
     data modify storage lobby:signsettings translate.gamemode merge value {"2":{"text":"Dobrodružný","color":"#FF8000"}}
 
 data modify storage lobby:signsettings translate merge value {nikimusic:{}}
-    data modify storage lobby:signsettings translate.gamemode merge value {"0":{"text":"Prežitie","color":"#FFFF00"}}
+    data modify storage lobby:signsettings translate.nikimusic merge value {"0":{"text":"Prežitie","color":"#FFFF00"}}
+
+data modify storage lobby:signsettings translate merge value {scoretype:{}}
+    data modify storage lobby:signsettings translate.scoretype merge value {"-1":{"text":"Bodozber","color":"#FFFF00"}}
+    data modify storage lobby:signsettings translate.scoretype merge value {"1":{"text":"Eliminácia","color":"#FFFF00"}}
