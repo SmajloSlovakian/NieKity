@@ -35,7 +35,7 @@ execute if score čas hs1 matches 1200 run say monštrá
 execute if score čas hs1 matches 1200 at @a[team=hs1.1,tag=!hs1.p] run function hs1:upravovac/mobspawn
 
 execute if score čas hs1 matches 2400 run say žiara
-execute if score čas hs1 matches 2400 run give @a[team=hs1.2] egg{display:{Name:'{"text":"EggsRay"}'}} 1
+#execute if score čas hs1 matches 2400 run give @a[team=hs1.2] egg{display:{Name:'{"text":"EggsRay"}'}} 1
 execute if score čas hs1 matches 2400 as @e[type=item,x=0,y=0,z=0] run data modify entity @s Glowing set value 1b
 
 execute if score čas hs1 matches 3600 run scoreboard players set čas hs1 0

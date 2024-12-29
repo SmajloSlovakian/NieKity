@@ -29,6 +29,7 @@ scoreboard players operation pártyleader crouch = @a[tag=partyleader,limit=1] c
 execute as @a[x=0,y=0,z=0,distance=..5,scores={miniid=1..},gamemode=!creative] run function mini:interface/tptomyminipos
 
 #ticky minihier
+function lobby:lobby/pvp1
 function niki:tick
 function mini:tickall
 #function pvp1:tick
