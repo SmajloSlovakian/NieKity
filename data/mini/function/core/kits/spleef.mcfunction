@@ -1,5 +1,0 @@
-item replace entity @s hotbar.0 with netherite_pickaxe[enchantments={levels:{"efficiency":6}},unbreakable={}]
-item replace entity @s hotbar.1 with netherite_axe[enchantments={levels:{"efficiency":6}},unbreakable={}]
-item replace entity @s hotbar.2 with netherite_sword[enchantments={levels:{"efficiency":6}},unbreakable={}]
-item replace entity @s hotbar.3 with netherite_hoe[enchantments={levels:{"efficiency":6}},unbreakable={}]
-item replace entity @s hotbar.4 with netherite_shovel[enchantments={levels:{"efficiency":6}},unbreakable={}]
