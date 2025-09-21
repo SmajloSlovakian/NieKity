@@ -12,21 +12,19 @@
           "name": "minecraft:firework_rocket",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
+              "function": "minecraft:set_fireworks",
+              "flight_duration": 3,
+              "explosions": {
+                "values": [
+                  {"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true},{"shape": "large_ball","colors": [16777215],"fade_colors": [0],"has_trail": true,"has_twinkle": true}],
+                "mode": "append"
               }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Fireworks:{Flight:3,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:2,Flicker:0,Trail:1,Colors:[I;2651799,11250603,4408131,14188952,4312372,14602026,15435844,15790320],FadeColors:[I;1973019,11743532,3887386,5320730,2437522,8073150,6719955,12801229]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]},{Type:1,Flicker:1,Trail:0,Colors:[I;1973019,11743532,4408131,15790320],FadeColors:[I;3887386,2437522,11250603,4312372,14602026]}]}}"
             }
           ]
         },
         {
           "type": "minecraft:loot_table",
-          "name": "sw1:groups/luksip"
+          "value": "sw1:groups/luksip"
         },
         {
           "type": "minecraft:item",
@@ -262,8 +260,8 @@
           "name": "minecraft:splash_potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:swiftness\"}"
+              "function": "minecraft:set_potion",
+              "id": "swiftness"
             }
           ]
         },
@@ -272,8 +270,8 @@
           "name": "minecraft:splash_potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:slowness\"}"
+              "function": "minecraft:set_potion",
+              "id": "slowness"
             }
           ]
         },
@@ -282,8 +280,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:fire_resistance\"}"
+              "function": "minecraft:set_potion",
+              "id": "fire_resistance"
             }
           ]
         },
@@ -292,8 +290,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:night_vision\"}"
+              "function": "minecraft:set_potion",
+              "id": "night_vision"
             }
           ]
         },
@@ -302,8 +300,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:invisibility\"}"
+              "function": "minecraft:set_potion",
+              "id": "invisibility"
             }
           ]
         },
@@ -315,11 +313,11 @@
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -1.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
+                  "attribute": "attack_speed",
+                  "operation": "add_multiplied_base",
+                  "amount": -1,
+                  "id": "niki:unattackspeed",
+                  "slot": "any"
                 }
               ]
             },

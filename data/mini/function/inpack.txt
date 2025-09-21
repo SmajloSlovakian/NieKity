@@ -4,7 +4,7 @@
 -data modify storage niki:nbt Buffer set from entity @s data
 
 # main
-minitype
+autocountdown
 state
 started
 noplayertimeout
@@ -15,8 +15,13 @@ dimtype
 dimension
 iscompletewin
 
+# reserved
+#nextrounddata
+#settings,spawnpoint
+$callbacks
+
 # timers
-timewitoutplayers
+timewithoutplayers
 startcountdown
 timer
 anthem
@@ -52,6 +57,7 @@ deathstring.
 attackspeed.
 blockreach.
 safefall.
+#entityreach.
 
 # variables
 score.
@@ -64,7 +70,5 @@ nikimusic
 finalintensity
 teamcount
 
-# reserved
-#nextrounddata
 
 +data modify entity @s data set from storage niki:nbt Buffer

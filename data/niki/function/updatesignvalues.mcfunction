@@ -1,8 +1,20 @@
 function niki:signtranslate
 
+# Miscellaneous
 data modify storage lobby:signsettings setvalues[0] merge value {tutorkit:{translateto:"kit",drawtype:1,possibilities:[0,1,2,3,4,5,8,6,7],dimstance:1,title:"Zmeniť kit",lobby:"0",key:"tutorkit",cmd:"function mini:interface/signchangekit"}}
 data modify storage lobby:signsettings setvalues[0] merge value {tutormap:{translateto:"map",drawtype:1,possibilities:[13,14],dimstance:1,title:"Zmeniť mapu",lobby:"0",key:"tutormap",cmd:"function mini:interface/signchangemap"}}
 
+# Lobby teleport
+data modify storage lobby:signsettings setvalues[0] merge value {pvp1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"Custom minigame",lobby:"0",key:"pvp1tp",cmd:"function lobby:lobbyspec/pvp1/tp"}}
+data modify storage lobby:signsettings setvalues[0] merge value {tb1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"The bridge",lobby:"0",key:"tb1tp",cmd:"function lobby:lobbyspec/tb1/tp"}}
+data modify storage lobby:signsettings setvalues[0] merge value {sw1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"Skywars",lobby:"0",key:"sw1tp",cmd:"function lobby:lobbyspec/sw1/tp"}}
+data modify storage lobby:signsettings setvalues[0] merge value {sp1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"Podkopávačka",lobby:"0",key:"sp1tp",cmd:"function lobby:lobbyspec/sp1/tp"}}
+data modify storage lobby:signsettings setvalues[0] merge value {bw1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"Bedwars",lobby:"0",key:"bw1tp",cmd:"function lobby:lobbyspec/bw1/tp"}}
+#crown chase
+data modify storage lobby:signsettings setvalues[0] merge value {cc1tp:{translateto:"null",drawtype:1,possibilities:[0],title:"Naháňačka",lobby:"0",key:"cc1tp",cmd:"function lobby:lobbyspec/cc1/tp"}}
+data modify storage lobby:signsettings setvalues[0] merge value {treningstart:{translateto:"null",drawtype:1,possibilities:[0],title:"Tréning",lobby:"0",key:"treningstart",cmd:"function lobby:lobbyspec/training/connectstart"}}
+
+# Custom minigame
 data modify storage lobby:signsettings setvalues[1] merge value {kit:{translateto:"kit",drawtype:1,possibilities:[0,1,2,3,4,5,8,6,7],title:"Kit",lobby:"1",key:"kit"}}
 data modify storage lobby:signsettings setvalues[1] merge value {map:{translateto:"map",drawtype:1,possibilities:[0,1,2,3,4,5,6,7,8,9,10,11,12,13],title:"Mapa",lobby:"1",key:"map"}}
 data modify storage lobby:signsettings setvalues[1] merge value {revives:{translateto:"inf",drawtype:2,possibilities:[0,1,2,3,4,5,10,15,20,-1],title:"Oživenia",lobby:"1",key:"revives"}}
@@ -39,6 +51,12 @@ data modify storage lobby:signsettings setvalues[1] merge value {nikianthem:{tra
 data modify storage lobby:signsettings setvalues[1] merge value {nikimusic:{translateto:"nikimusic",drawtype:1,possibilities:[-2,-1,0,1],title:"Hudba",lobby:"1",key:"nikimusic"}}
 
 
+# The Bridge
 data modify storage lobby:signsettings setvalues[2] merge value {targetscore:{translateto:"null",drawtype:2,possibilities:[1,5,10,15,20,30],title:"Výherné skóre",lobby:"2",key:"targetscore"}}
 data modify storage lobby:signsettings setvalues[2] merge value {pauseonscore:{translateto:"boolean",drawtype:1,possibilities:[0,1],title:"Pauza pri skóre",lobby:"2",key:"pauseonscore"}}
 data modify storage lobby:signsettings setvalues[2] merge value {scoretype:{translateto:"scoretype",drawtype:1,possibilities:[-1,1],title:"Typ výhry",lobby:"2",key:"scoretype"}}
+
+
+# Skywars
+data modify storage lobby:signsettings setvalues[3] merge value {map:{translateto:"map",drawtype:1,possibilities:[-1,4,5,6],title:"Mapa",lobby:"3",key:"map"}}
+data modify storage lobby:signsettings setvalues[3] merge value {revives:{translateto:"null",drawtype:2,possibilities:[0,1,2,3,4,5,6],title:"Oživenia",lobby:"3",key:"revives"}}

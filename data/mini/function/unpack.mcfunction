@@ -2,7 +2,7 @@
 data modify storage niki:nbt Buffer set from entity @s data
 
 # main
-execute store result score minitype nikimini run data get storage niki:nbt Buffer.minitype
+execute store result score autocountdown nikimini run data get storage niki:nbt Buffer.autocountdown
 execute store result score state nikimini run data get storage niki:nbt Buffer.state
 execute store result score started nikimini run data get storage niki:nbt Buffer.started
 execute store result score noplayertimeout nikimini run data get storage niki:nbt Buffer.noplayertimeout
@@ -13,8 +13,13 @@ execute store result score dimtype nikimini run data get storage niki:nbt Buffer
 execute store result score dimension nikimini run data get storage niki:nbt Buffer.dimension
 execute store result score iscompletewin nikimini run data get storage niki:nbt Buffer.iscompletewin
 
+# reserved
+#nextrounddata
+#settings,spawnpoint
+#$callbacks
+
 # timers
-execute store result score timewitoutplayers nikimini run data get storage niki:nbt Buffer.timewitoutplayers
+execute store result score timewithoutplayers nikimini run data get storage niki:nbt Buffer.timewithoutplayers
 execute store result score startcountdown nikimini run data get storage niki:nbt Buffer.startcountdown
 execute store result score timer nikimini run data get storage niki:nbt Buffer.timer
 execute store result score anthem nikimini run data get storage niki:nbt Buffer.anthem
@@ -172,5 +177,3 @@ execute store result score nikimusic nikimini run data get storage niki:nbt Buff
 execute store result score finalintensity nikimini run data get storage niki:nbt Buffer.finalintensity
 execute store result score teamcount nikimini run data get storage niki:nbt Buffer.teamcount
 
-# reserved
-#nextrounddata

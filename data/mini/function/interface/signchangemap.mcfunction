@@ -10,7 +10,6 @@ execute as @e[tag=1] run function mini:unpack
 
 execute store result score map nikimini run data get storage niki:nbt SavedBuffer.signchange.posval
 scoreboard players operation a nikimath = map nikimini
-function niki:debug/tellmath
 function niki:flush
 function mini:core/mapspec/structure
 

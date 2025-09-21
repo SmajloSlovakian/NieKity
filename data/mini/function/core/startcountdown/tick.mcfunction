@@ -16,3 +16,4 @@ execute if score startcountdown nikimini matches ..0 if function mini:core/utili
 
 execute if score dimension nikimini matches 1.. if score outoforder nikimini matches 0 run return run scoreboard players remove startcountdown nikimini 1
 execute unless score startcountdown nikimini matches 99 run scoreboard players remove startcountdown nikimini 1
+execute if score autocountdown nikimini matches 0 run function mini:init/kill

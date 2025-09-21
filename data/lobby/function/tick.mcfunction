@@ -29,7 +29,7 @@ scoreboard players operation pártyleader crouch = @a[tag=partyleader,limit=1] c
 execute as @a[x=0,y=0,z=0,distance=..5,scores={miniid=1..},gamemode=!creative] run function mini:interface/tptomyminipos
 
 #ticky minihier
-function lobby:lobby/pvp1
+function lobby:lobbyspec/tick
 function niki:tick
 function mini:tickall
 #function pvp1:tick
@@ -81,6 +81,8 @@ scoreboard players set @a umrel2 0
 #execute as @a[tag=attacked] run say a
 #execute as @a[tag=attacked] on attacker run say b
 tag @a remove attacked
+
+execute if data storage niki:nbt Stack[-1] run function niki:error/stacknotempty
 
 function lobby:lateexecute
 scoreboard players set gaméskipcheck gametime 1

@@ -1,5 +1,3 @@
-scoreboard players set minitype nikimini 1
-scoreboard players set minispec nikimini 1
 
 execute store result score pauseonscore nikimini run data get storage lobby:signsettings setvalues[1].pauseonscore.posval
 execute store result score map nikimini run data get storage lobby:signsettings setvalues[1].map.posval

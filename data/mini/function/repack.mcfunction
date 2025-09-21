@@ -2,7 +2,7 @@
 data modify storage niki:nbt Buffer set value {}
 
 # main
-execute store result storage niki:nbt Buffer.minitype int 1 run scoreboard players get minitype nikimini
+execute store result storage niki:nbt Buffer.autocountdown int 1 run scoreboard players get autocountdown nikimini
 execute store result storage niki:nbt Buffer.state int 1 run scoreboard players get state nikimini
 execute store result storage niki:nbt Buffer.started int 1 run scoreboard players get started nikimini
 execute store result storage niki:nbt Buffer.noplayertimeout int 1 run scoreboard players get noplayertimeout nikimini
@@ -13,8 +13,13 @@ execute store result storage niki:nbt Buffer.dimtype int 1 run scoreboard player
 execute store result storage niki:nbt Buffer.dimension int 1 run scoreboard players get dimension nikimini
 execute store result storage niki:nbt Buffer.iscompletewin int 1 run scoreboard players get iscompletewin nikimini
 
+# reserved
+#nextrounddata
+#settings,spawnpoint
+data modify storage niki:nbt Buffer.callbacks set from entity @s data.callbacks
+
 # timers
-execute store result storage niki:nbt Buffer.timewitoutplayers int 1 run scoreboard players get timewitoutplayers nikimini
+execute store result storage niki:nbt Buffer.timewithoutplayers int 1 run scoreboard players get timewithoutplayers nikimini
 execute store result storage niki:nbt Buffer.startcountdown int 1 run scoreboard players get startcountdown nikimini
 execute store result storage niki:nbt Buffer.timer int 1 run scoreboard players get timer nikimini
 execute store result storage niki:nbt Buffer.anthem int 1 run scoreboard players get anthem nikimini
@@ -172,7 +177,5 @@ execute store result storage niki:nbt Buffer.nikimusic int 1 run scoreboard play
 execute store result storage niki:nbt Buffer.finalintensity int 1 run scoreboard players get finalintensity nikimini
 execute store result storage niki:nbt Buffer.teamcount int 1 run scoreboard players get teamcount nikimini
 
-# reserved
-#nextrounddata
 
 data modify entity @s data set from storage niki:nbt Buffer

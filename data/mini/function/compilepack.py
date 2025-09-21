@@ -24,6 +24,10 @@ with open(cesta + "inpack.txt",encoding="utf-8") as s:
             unpack += "\n" + i
             repack += "\n" + i
             continue
+        if i[0] == "$":
+            unpack += "\n#" + i
+            repack += "\n" + f"data modify storage niki:nbt Buffer.{i[1:]} set from entity @s data.{i[1:]}"
+            continue
         if i[0] == "-":
             unpack += "\n" + i[1:]
             continue

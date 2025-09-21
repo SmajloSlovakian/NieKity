@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "sw1:groups/luksip"
+          "value": "sw1:groups/luksip"
         },
         {
           "type": "minecraft:item",
@@ -24,8 +24,9 @@
               }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Švehloguľa\"}'}}"
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": "Švehloguľa"
             }
           ],
           "weight": 2
@@ -42,8 +43,9 @@
               }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"EggsRay\"}'}}"
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": "Eggsray"
             }
           ]
         },
@@ -475,8 +477,8 @@
           "name": "minecraft:splash_potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:healing\"}"
+              "function": "set_potion",
+              "id": "healing"
             }
           ]
         },
@@ -606,8 +608,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:luck\"}"
+              "function": "minecraft:set_potion",
+              "id": "luck"
             }
           ]
         },

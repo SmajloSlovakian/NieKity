@@ -5,7 +5,7 @@ execute if score party lobby matches 1 if entity @s[tag=!partytp] as @a[tag=!par
 execute if score party lobby matches 1 if entity @s[tag=!partytp] run tag @a remove partytp
 
 
-execute if score @s miniid matches 1.. if entity @s[scores={lobby=1}] run return run function mini:interface/disconnectplayer
+execute if score @s miniid matches 1.. run return run function mini:interface/disconnectplayer
 execute in minecraft:overworld run tp @s 0 3 0 0 0
 execute in minecraft:overworld run spawnpoint @s 0 3 0 0
 function niki:text/tp/lobby

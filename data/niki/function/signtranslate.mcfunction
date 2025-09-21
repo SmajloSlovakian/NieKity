@@ -13,6 +13,7 @@ data modify storage lobby:signsettings translate merge value {kit:{}}
     data modify storage lobby:signsettings translate.kit merge value {"7":{"text":"Chytač","color":"#FF00FF"}}
 
 data modify storage lobby:signsettings translate merge value {map:{}}
+    data modify storage lobby:signsettings translate.map merge value {"-1":{"text":"Náhodná","color":"#C000FF"}}
     data modify storage lobby:signsettings translate.map merge value {"0":{"text":"MiniPvP","color":"#00FFFF"}}
     data modify storage lobby:signsettings translate.map merge value {"1":{"text":"MaxiPvP","color":"#FFFF00"}}
     data modify storage lobby:signsettings translate.map merge value {"2":{"text":"Hrad","color":"#C000C0"}}
@@ -62,5 +63,5 @@ data modify storage lobby:signsettings translate merge value {nikimusic:{}}
     data modify storage lobby:signsettings translate.nikimusic merge value {"0":{"text":"Prežitie","color":"#FFFF00"}}
 
 data modify storage lobby:signsettings translate merge value {scoretype:{}}
-    data modify storage lobby:signsettings translate.scoretype merge value {"-1":{"text":"Bodozber","color":"#FFFF00"}}
-    data modify storage lobby:signsettings translate.scoretype merge value {"1":{"text":"Eliminácia","color":"#FFFF00"}}
+    data modify storage lobby:signsettings translate.scoretype merge value {"-1":{"text":"Eliminácia","color":"#FF00FF"}}
+    data modify storage lobby:signsettings translate.scoretype merge value {"1":{"text":"Bodozber","color":"#FFFF00"}}

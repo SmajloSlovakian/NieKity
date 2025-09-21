@@ -33,11 +33,10 @@ execute as @a[scores={umrel=1..,inthismini=1..}] run function mini:core/game/dea
 execute as @a[scores={inthismini=1..,deathtimep=0},tag=tohandledeath] run function mini:core/game/latedeath
 
 # note: score elimination doesn't work on aqua and purple
-execute as @a[scores={inthismini=1..},tag=!spect] if items entity @s armor.head minecraft:golden_helmet[minecraft:item_name="Koruna"] if score timer nikimini matches 1.. run function mini:core/game/utility/crownscore
+execute as @a[scores={inthismini=1..},tag=!spect] if items entity @s armor.head minecraft:golden_helmet[minecraft:item_name='"Koruna"'] if score timer nikimini matches 1.. run function mini:core/game/utility/crownscore
 execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/deathscore
 execute as @a[scores={umrel=1..,inthismini=1..},tag=!spect] if score timer nikimini matches 1.. run function mini:core/game/utility/killscore
 execute if score timer nikimini matches 1.. run function mini:core/game/utility/scorepos
-
 
 execute unless entity @a[scores={inthismini=1..}] run scoreboard players remove timewithoutplayers nikimini 1
 execute if entity @a[scores={inthismini=1..}] run scoreboard players operation timewithoutplayers nikimini = noplayertimeout nikimini
