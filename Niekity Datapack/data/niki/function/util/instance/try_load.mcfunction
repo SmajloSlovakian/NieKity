@@ -1,4 +1,4 @@
-## If the given object on the given path has a load member, execute it as a command
+## executes try_macro with load member
 # path: DataPath(Instance)
 
-$function niki:util/macro_path {path: "$(path).load"}
+$function niki:util/instance/try_macro {path: "$(path)", member: "load"}

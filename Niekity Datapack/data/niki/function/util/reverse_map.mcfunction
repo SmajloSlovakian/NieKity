@@ -2,8 +2,9 @@
 # path: DataPath
 # function: Command{path: DataPath}
 
+scoreboard players set to nikitmp -1
 scoreboard players set by nikitmp -1
-scoreboard players set to nikitmp 0
 $execute store result score from nikitmp run data get $(path)
+scoreboard players remove from nikitmp 1
 
 $function niki:util/map/rec {path: "$(path)", function: "$(function)"}

@@ -1,0 +1,1 @@
+## Breaks any blocks preventing a player from respawning

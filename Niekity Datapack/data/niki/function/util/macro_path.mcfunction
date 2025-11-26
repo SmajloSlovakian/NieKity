@@ -3,4 +3,4 @@
 
 data merge storage niki:var {Bus: {1: "", 2: "", 3: ""}}
 $data modify storage niki:var Bus.1 set from $(path)
-function niki:util/macro_triple
+return run function niki:util/macro_triple with storage niki:var Bus
