@@ -1,6 +1,9 @@
 {
     "values": [
         "niki:const/minigame",
-        "niki:const/sign"
+        "niki:const/sign",
+        "niki:const/map",
+        "niki:const/music",
+        "niki:const/dimension"
     ]
 }
