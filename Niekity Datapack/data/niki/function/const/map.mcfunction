@@ -1,6 +1,7 @@
-data merge storage niki:const {Minigame: {\
+data merge storage niki:const {Map: {\
     template: {\
         commands: [\
-        ]\
+        ],\
+        dimension_type: "void",\
     },\
 }}

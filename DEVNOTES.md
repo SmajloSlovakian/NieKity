@@ -10,7 +10,7 @@ still preferably as less complexity as practical
 storage niki:var Stack is a list, top of the stack is Stack[-1] (last item pushed)
 it is used to communicate between functions
 
-storage niki:var Bus is a compound, where you can assemble data structures easily
+storage niki:var Bus is a compound, which you can use to store data in when stack is not sufficient
 
 Data types:
 - DataPath
@@ -30,6 +30,7 @@ Data types:
  - types:
   - 0: complex is DataPath(ComplexValue); resolves to the resolved complex value
   - 1: complex is Command; resolves to the return value of value
+  - 2: complex is List(ComplexValue); random choice
 - Command
  - "say t"
  - can specify what the command must take
@@ -41,3 +42,26 @@ Data types:
 
 todo:
 - implement extend_with and modify_with in complexvalues
+- implement type_2 complex value
+
+
+
+process of minigame start:
+
+- wait for enough players in teams
+- store sign settings snapshot
+- choose map
+- try to reserve a dimension
+- start countdown
+- forceload needed space
+- wait for countdown
+- lock-in players
+- create teams
+- populate with map
+- setup players (teleport, make spect...)
+- everything is ready - players are spectators in the map, music starts playing and stuff...
+
+
+when enough players and started countdown, then when countdown is halted, the minigame should completely restart to ensure being up to date
+
+dimensional signs should still be able to exist, minigames store their own snapshot of sign setting states

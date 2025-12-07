@@ -1,5 +1,6 @@
 ## Resolves the complex value on path - resulting complex is pushed to Stack and source path if baked
 # path: DataPath(ComplexValue)
+# -> numerical value of the resolved value
 
 function niki:util/stack/push
 
@@ -21,3 +22,4 @@ execute if score type nikitmp matches 1 run function niki:util/complex/resolve/t
 # auto_bake
 $execute if score bake nikitmp matches 1 run data modify $(path) set from storage niki:var Stack[-1]
 
+return run data get storage niki:var Stack[-1]
