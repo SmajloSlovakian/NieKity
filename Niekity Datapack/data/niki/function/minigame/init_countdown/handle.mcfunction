@@ -42,4 +42,5 @@ execute unless score init_countdown nikitmp matches -1 run return 1
 # lock-in players
 # create teams
 
-data modify storage niki:var CurrentInstance.timer set value 0
+data modify storage niki:var CurrentInstance.timer set value -100
+

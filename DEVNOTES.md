@@ -65,3 +65,19 @@ process of minigame start:
 when enough players and started countdown, then when countdown is halted, the minigame should completely restart to ensure being up to date
 
 dimensional signs should still be able to exist, minigames store their own snapshot of sign setting states
+
+routine graph:
+- used for changing behaviour mid-instance and actually handling behaviour
+- the graph part defines the routines and the active routines list defines which routines are currently active and should be ticked, and how many times they have been ticked already.
+- the routine is kind of a time table, it defines lists of commands to run when the timer hits a certain number
+- timer increments automatically after the routine is ran
+- to remove the routine, delete the name attribute
+- keys:
+ - tick: gets ran every tick
+ - late_tick: gets ran every tick after the timed commands
+ - term: gets ran when the instance is about to get terminated
+ - 0, 1, 2, ...: gets ran only when the timer is at that position
+
+death handling:
+- gamerule doImmediateRespawn is true by default, to show a death screen, use util/death_screen
+- gamerule keepInventory is true by default, to make the player drop their items, use util/death_screen

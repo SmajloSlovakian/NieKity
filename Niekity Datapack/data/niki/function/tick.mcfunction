@@ -8,6 +8,12 @@ scoreboard objectives add nikitmp dummy
 function niki:util/reverse_map {path: "storage niki:var Instances", function: "function niki:util/instance/try_tick"}
 
 
+#execute as @a at @s rotated as @s run spawnpoint @s ~ ~ ~ ~ ~
+#execute as @a[scores={niki_death=1}] run function niki:util/tp_to_last_death
+#execute as @a[scores={niki_death=3}] run function niki:util/death_screen
+#execute as @a[scores={niki_death=3}] run scoreboard players set @s niki_death 0
+#scoreboard players add @a[scores={niki_death=1..}] niki_death 1
+
 
 execute if data storage niki:var Stack[0] run say Critical: Stack overflow
 

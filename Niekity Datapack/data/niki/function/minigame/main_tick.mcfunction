@@ -1,9 +1,9 @@
 
 
 # initial countdown
-execute store result score init_countdown nikitmp run function niki:util/complex/resolve {path: "CurrentInstance.init_countdown"}
-function niki:util/stack/pull
-execute unless score init_countdown nikitmp matches -1 run return run function niki:minigame/init_countdown/handle
+#execute store result score init_countdown nikitmp run function niki:util/complex/resolve {path: "CurrentInstance.init_countdown"}
+#function niki:util/stack/pull
+#execute unless score init_countdown nikitmp matches -1 run return run function niki:minigame/init_countdown/handle
 
 
 # init_countdown

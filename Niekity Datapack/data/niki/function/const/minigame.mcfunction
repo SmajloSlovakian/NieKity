@@ -13,6 +13,10 @@ data merge storage niki:const {Minigame: {\
         default_init_countdown: 100,\
         needed_player_count: 1,\
         init_countdown: 101,\
+        routine_graph: {\
+            root: {tick: ["say ticked command"], 0: ["say command stuff idk"]}\
+        },\
+        active_routines: [{name: "root", timer: 0}],\
     },\
     test1: {\
         complex: "storage niki:const Minigame.template",\
