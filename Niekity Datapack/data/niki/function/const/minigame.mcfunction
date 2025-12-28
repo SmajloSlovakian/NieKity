@@ -1,4 +1,4 @@
-data merge storage niki:const {Minigame: {\
+data modify storage niki:const Minigame set value {\
     template: {\
         load: "function niki:minigame/load", tick: "function niki:minigame/tick", term: "function niki:minigame/term",\
         id: {complex: "function niki:util/new_id", type: 1, auto_bake: true},\
@@ -10,11 +10,10 @@ data merge storage niki:const {Minigame: {\
         pos_x: 0,\
         pos_y: 0,\
         pos_z: 0,\
-        default_init_countdown: 100,\
         needed_player_count: 1,\
-        init_countdown: 101,\
         routine_graph: {\
-            root: {tick: ["say ticked command"], 0: ["say command stuff idk"]}\
+            root: {0: ["function niki:minigame/routine/util/activate {name: \"init\"}"]},\
+            init: {tick: ["#function niki:minigame/init_countdown/handle"], 1: ["say countdown started"], 21: ["say 4"], 41: ["say 3"], 61: ["say 2"], 81: ["say 1"], 101: ["say starting", "function niki:minigame/routine/util/remove_me"]}\
         },\
         active_routines: [{name: "root", timer: 0}],\
     },\
@@ -25,7 +24,7 @@ data merge storage niki:const {Minigame: {\
             teams: [],\
         },\
     },\
-}}
+}
 
 
 #   test2: {

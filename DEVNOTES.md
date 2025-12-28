@@ -22,7 +22,7 @@ Data types:
  - recursively defined value, which can be a constant or a linked value or it can provide a value from a function
  - if it is an unbaked complex value, it can be checked by execute if data $(path).complex
  - the resolved value is pushed to Stack
- - auto_bake is optional, default is false; if it's true, the value replaces itself with the resolved value
+ - auto_bake is optional, default is true; if it's true, the value replaces itself with the resolved value
  - merge_with is optional, default is {}
  - extend_with is optional, default is []
  - modify_with is optional, default is []; type is List(Command)
@@ -43,7 +43,7 @@ Data types:
 todo:
 - implement extend_with and modify_with in complexvalues
 - implement type_2 complex value
-
+- redo init_countdown with routines
 
 
 process of minigame start:
@@ -74,8 +74,8 @@ routine graph:
 - to remove the routine, delete the name attribute
 - keys:
  - tick: gets ran every tick
- - late_tick: gets ran every tick after the timed commands
- - term: gets ran when the instance is about to get terminated
+ - late_tick: gets ran every tick after the timed commands (unimplemented)
+ - term: gets ran when the instance is about to get terminated (unimplemented)
  - 0, 1, 2, ...: gets ran only when the timer is at that position
 
 death handling:

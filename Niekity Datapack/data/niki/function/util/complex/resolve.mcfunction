@@ -10,6 +10,7 @@ $data modify storage niki:var Stack[-1] set from $(path)
 execute unless data storage niki:var Stack[-1].complex run return run data get storage niki:var Stack[-1]
 
 # complex
+execute unless data storage niki:var Stack[-1].auto_bake run data modify storage niki:var Stack[-1].auto_bake set value 1
 execute store result score bake nikitmp run data get storage niki:var Stack[-1].auto_bake
 execute store result score type nikitmp run data get storage niki:var Stack[-1].type
 
