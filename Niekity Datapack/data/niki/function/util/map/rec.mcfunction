@@ -1,4 +1,4 @@
-## Iterates over list and gives the item's path to provided function from Stack[-2].from to tStack[-2].to by Stack[-2].by
+## Iterates over list and gives the item's path to provided function from Stack[-2].from to Stack[-2].to by Stack[-2].by
 # path: DataPath(List)
 # function: Command(path: DataPath)
 

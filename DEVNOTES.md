@@ -71,6 +71,7 @@ routine graph:
 - the graph part defines the routines and the active routines list defines which routines are currently active and should be ticked, and how many times they have been ticked already.
 - the routine is kind of a time table, it defines lists of commands to run when the timer hits a certain number
 - timer increments automatically after the routine is ran
+ - this only applies if the timer is not negative - this is useful for error conditions and stuff like the init not starting because of unavailable dimension
 - to remove the routine, delete the name attribute
 - keys:
  - tick: gets ran every tick

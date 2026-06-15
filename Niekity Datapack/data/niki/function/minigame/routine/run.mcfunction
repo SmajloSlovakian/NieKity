@@ -26,7 +26,7 @@ data modify storage niki:var Bus.2 set from storage niki:var Stack[-1].name
 function niki:util/macro_triple with storage niki:var Bus
 
 execute store result score timer nikitmp run data get storage niki:var Stack[-1].timer
-scoreboard players add timer nikitmp 1
+execute if score timer nikitmp matches 0.. run scoreboard players add timer nikitmp 1
 execute store result storage niki:var Stack[-1].timer int 1 run scoreboard players get timer nikitmp
 
 $data modify $(path) set from storage niki:var Stack[-1]
