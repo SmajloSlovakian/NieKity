@@ -1,4 +1,4 @@
 # Makes the dimension reservable again
-# dimension: String
+# reserved_dimension: String
 
-$data remove storage niki:var ReservedDimensions[{name: "$(dimension)"}]
+$data remove storage niki:var ReservedDimensions[{name: "$(reserved_dimension)"}]

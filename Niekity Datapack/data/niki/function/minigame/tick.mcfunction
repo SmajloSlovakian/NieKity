@@ -2,3 +2,5 @@ execute unless data storage niki:var CurrentInstance run return run say Error: m
 
 data merge storage niki:var {CurrentInstance: {command: "function niki:minigame/routine/handle"}}
 function niki:util/execute_in_positioned with storage niki:var CurrentInstance
+
+execute if data storage niki:var CurrentInstance.to_terminate run function niki:minigame/term

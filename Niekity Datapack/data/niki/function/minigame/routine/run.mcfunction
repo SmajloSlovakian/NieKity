@@ -5,7 +5,6 @@ function niki:util/stack/push
 
 $data modify storage niki:var Stack[-1] set from $(path)
 
-
 # run routine here
 data modify storage niki:var Bus set value {1: "function niki:util/map {function: \"function niki:util/macro_path\", path: \"storage niki:var CurrentInstance.routine_graph.", 2: "", 3: ".tick\"}"}
 data modify storage niki:var Bus.2 set from storage niki:var Stack[-1].name
@@ -30,6 +29,6 @@ execute if score timer nikitmp matches 0.. run scoreboard players add timer niki
 execute store result storage niki:var Stack[-1].timer int 1 run scoreboard players get timer nikitmp
 
 $data modify $(path) set from storage niki:var Stack[-1]
-$execute unless data storage niki:var Stack[-1].name run data remove $(path) 
+$execute unless data storage niki:var Stack[-1].name run data remove $(path)
 
 function niki:util/stack/pull

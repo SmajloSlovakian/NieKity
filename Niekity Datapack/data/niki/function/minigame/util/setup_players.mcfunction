@@ -1,1 +1,0 @@
-# set spawnpoint based on team inside map, teleport, set spectator

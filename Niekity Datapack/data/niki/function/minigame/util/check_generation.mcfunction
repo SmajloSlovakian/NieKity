@@ -1,0 +1,1 @@
+## Checks whether or not the map is generated yet

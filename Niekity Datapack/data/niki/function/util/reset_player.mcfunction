@@ -2,6 +2,6 @@ clear
 xp set @s 0 points
 xp set @s 0 levels
 
-gamerule showDeathMessages false
+gamerule show_death_messages false
 kill
-gamerule showDeathMessages true
+gamerule show_death_messages true

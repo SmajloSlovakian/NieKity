@@ -43,7 +43,6 @@ Data types:
 todo:
 - implement extend_with and modify_with in complexvalues
 - implement type_2 complex value
-- redo init_countdown with routines
 
 
 process of minigame start:
