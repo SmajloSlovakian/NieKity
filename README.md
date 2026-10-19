@@ -5,3 +5,5 @@ Minecraft minigames in the form of a map and a datapack!
   - I may or may not release the map somewhere...
   - This server is not public
   - This repository is mainly for collaborating purposes with my friends
+
+Currently undergoing a very lengthy rewrite on the Rewrite-2 branch focused on flexibility and data-orientation.
